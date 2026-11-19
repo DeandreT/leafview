@@ -27,7 +27,7 @@ The default run writes `artifacts/paced-codecs.json`. `BENCH_PACED_OUTPUT` overr
 
 ## Deploy the sidecars
 
-`bun scripts/precompress.mjs [output-dir]` emits the two renderer JS modules and the WASM binary at their existing relative paths, with an identity, `.br` (quality 11) and `.gz` (level 9) copy of each. It round-trips each compressed file before writing. The default output directory is `artifacts/delivery/`. Publish this directory alongside the application under the same versioned prefix; re-run the script whenever the renderer changes. Keep licensing notices with the distribution.
+The measurements above used the original embedded build. For the current build see [renderer packaging and resource checks](../docs/renderer-delivery.md). The static export includes both renderer modules, the WASM binary, twelve on-demand data files, and license notices. The default output directory is `artifacts/delivery/`. Publish this entire directory under one versioned prefix.
 
 Keep application URLs unchanged (e.g. `pkg/folio_wasm.wasm`). Have the static server negotiate `Accept-Encoding`, including an identity fallback, and send `Vary: Accept-Encoding`. A selected sidecar needs the **original MIME type** (`application/wasm` or JavaScript) and its `Content-Encoding` (`br` or `gzip`); the WASM loader can then compile the decoded stream. For example, in a Caddy site serving the assembled application:
 
