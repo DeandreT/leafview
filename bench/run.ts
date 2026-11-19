@@ -16,6 +16,8 @@ const engines = ["pdfjs", "wasm"] as const;
 type Engine = typeof engines[number];
 const smoke = process.argv[2] === "--smoke";
 const preload = process.argv[2] === "--preload";
+const sharedLink = preload && process.env.BENCH_SHARED_LINK === "1";
+let linkFreeAt = 0;
 const paced = process.argv[2] === "--paced" || preload;
 type Codec = "gzip" | "br";
 let codec: Codec = "gzip";
@@ -77,7 +79,14 @@ const server = Bun.serve({
       const body = new ReadableStream({
         async pull(controller) {
           const end = Math.min(pos+32768,bytes.length);
-          await Bun.sleep(Math.max(0, Math.ceil(start+40+end/1250-performance.now())));
+          let due = start+40+end/1250;
+          if (sharedLink) {
+            // Reserve one chunk at a time on the shared link after the request delay.
+            // This serializes bytes while still allowing requests and CPU work to overlap.
+            linkFreeAt = Math.max(performance.now(),linkFreeAt) + (end-pos)/1250;
+            due = linkFreeAt;
+          }
+          await Bun.sleep(Math.max(0, Math.ceil(due-performance.now())));
           controller.enqueue(bytes.subarray(pos,end));
           record.encodedBodyBytes += end - pos;
           pos=end; if (end === bytes.length) controller.close();
@@ -286,8 +295,8 @@ try {
         }
         console.log(`Preload round ${r+1}/${rounds}`);
       }
-      writeFileSync(`${root}/results/preload-study.json`,JSON.stringify({rounds,chromium:browser.version(),
-        note:"Fresh context, list already interactive, no HTTP cache, Brotli, 10 Mbit/s per response, 40 ms/request. -1 measures no-open after preload finishes.",samples},null,2)+"\n");
+      writeFileSync(`${root}/results/preload${sharedLink ? "-shared" : ""}-study.json`,JSON.stringify({rounds,chromium:browser.version(),
+        note:`Fresh context, list already interactive, no HTTP cache, Brotli, 10 Mbit/s ${sharedLink ? "aggregate" : "per response"}, 40 ms/request. -1 measures no-open after preload finishes.`,samples},null,2)+"\n");
     } finally { await browser.close(); }
   } else if (paced) {
     const files = preparePacedAssets();

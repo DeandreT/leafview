@@ -13,3 +13,5 @@
 The benchmark serves the same adapter in both arms, with a benchmark-only export of its memoized `loadCode` function. The early arm imports and compiles it at list readiness; the other waits for the click. The clock starts when the loaded list is available, not when the user first navigates to the application. Each arm uses a fresh context, Brotli, a per-response bandwidth budget, no HTTP cache and a 250-page packet. Six interleaved rounds, 36 verified opens and 12 no-open controls. Early exit before download completes, overhead during initial application navigation, and real-world packet-open probability are not measured.
 
 Run `bun bench/run.ts --preload` after building fixtures and static sidecars. [Raw observations](preload-study.json).
+
+As a sensitivity check, `BENCH_SHARED_LINK=1` gives the whole session one shared 10 Mbit/s budget. After a 500 ms pause, preloading reduced median click-to-preview from 1,701 to 1,194 ms (list-to-preview: 2,204 to 1,704 ms). After 1,500 ms it reduced it from 1,718 to 528 ms. Immediate clicks were essentially tied (1,695 vs 1,701 ms). [Shared-link observations](preload-shared-study.json).

@@ -1,0 +1,1261 @@
+{
+  "rounds": 6,
+  "chromium": "158.0.8127.18",
+  "note": "Fresh context, list already interactive, no HTTP cache, Brotli, 10 Mbit/s aggregate, 40 ms/request. -1 measures no-open after preload finishes.",
+  "samples": [
+    {
+      "round": 1,
+      "dwellMs": 0,
+      "early": false,
+      "clickMs": 1730.300000011921,
+      "listMs": 1730.300000011921,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "dwellMs": 0,
+      "early": true,
+      "clickMs": 1687.199999988079,
+      "listMs": 1687.5,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "dwellMs": 500,
+      "early": false,
+      "clickMs": 1693.800000011921,
+      "listMs": 2199.100000023842,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "dwellMs": 500,
+      "early": true,
+      "clickMs": 1218.4000000357628,
+      "listMs": 1721.2000000476837,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "dwellMs": 1500,
+      "early": false,
+      "clickMs": 1710.699999988079,
+      "listMs": 3218,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "dwellMs": 1500,
+      "early": true,
+      "clickMs": 523.1999999880791,
+      "listMs": 2034.0999999642372,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "dwellMs": -1,
+      "early": false,
+      "clickMs": null,
+      "listMs": null,
+      "markerVerified": false,
+      "transfers": []
+    },
+    {
+      "round": 1,
+      "dwellMs": -1,
+      "early": true,
+      "clickMs": null,
+      "listMs": null,
+      "markerVerified": false,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "dwellMs": -1,
+      "early": true,
+      "clickMs": null,
+      "listMs": null,
+      "markerVerified": false,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "dwellMs": -1,
+      "early": false,
+      "clickMs": null,
+      "listMs": null,
+      "markerVerified": false,
+      "transfers": []
+    },
+    {
+      "round": 2,
+      "dwellMs": 1500,
+      "early": true,
+      "clickMs": 532.8999999761581,
+      "listMs": 2047.8999999761581,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "dwellMs": 1500,
+      "early": false,
+      "clickMs": 1695.3999999761581,
+      "listMs": 3203.300000011921,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "dwellMs": 500,
+      "early": true,
+      "clickMs": 1175.3999999761581,
+      "listMs": 1682.2999999523163,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "dwellMs": 500,
+      "early": false,
+      "clickMs": 1707.6000000238419,
+      "listMs": 2221.399999976158,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "dwellMs": 0,
+      "early": true,
+      "clickMs": 1702.5,
+      "listMs": 1702.7000000476837,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "dwellMs": 0,
+      "early": false,
+      "clickMs": 1700.2000000476837,
+      "listMs": 1700.2000000476837,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "dwellMs": 0,
+      "early": false,
+      "clickMs": 1689.5999999642372,
+      "listMs": 1689.5999999642372,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "dwellMs": 0,
+      "early": true,
+      "clickMs": 1685.5,
+      "listMs": 1685.800000011921,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "dwellMs": 500,
+      "early": false,
+      "clickMs": 1704.1000000238419,
+      "listMs": 2205.899999976158,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "dwellMs": 500,
+      "early": true,
+      "clickMs": 1187.8999999761581,
+      "listMs": 1698.5,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "dwellMs": 1500,
+      "early": false,
+      "clickMs": 1721.7000000476837,
+      "listMs": 3232.300000011921,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "dwellMs": 1500,
+      "early": true,
+      "clickMs": 510.0999999642372,
+      "listMs": 2010.8999999761581,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "dwellMs": -1,
+      "early": false,
+      "clickMs": null,
+      "listMs": null,
+      "markerVerified": false,
+      "transfers": []
+    },
+    {
+      "round": 3,
+      "dwellMs": -1,
+      "early": true,
+      "clickMs": null,
+      "listMs": null,
+      "markerVerified": false,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "dwellMs": -1,
+      "early": true,
+      "clickMs": null,
+      "listMs": null,
+      "markerVerified": false,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "dwellMs": -1,
+      "early": false,
+      "clickMs": null,
+      "listMs": null,
+      "markerVerified": false,
+      "transfers": []
+    },
+    {
+      "round": 4,
+      "dwellMs": 1500,
+      "early": true,
+      "clickMs": 515.5999999642372,
+      "listMs": 2016.0999999642372,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "dwellMs": 1500,
+      "early": false,
+      "clickMs": 1713.9000000357628,
+      "listMs": 3222.300000011921,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "dwellMs": 500,
+      "early": true,
+      "clickMs": 1167.800000011921,
+      "listMs": 1674,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "dwellMs": 500,
+      "early": false,
+      "clickMs": 1694.1000000238419,
+      "listMs": 2196.199999988079,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "dwellMs": 0,
+      "early": true,
+      "clickMs": 1699.2000000476837,
+      "listMs": 1699.5,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "dwellMs": 0,
+      "early": false,
+      "clickMs": 1690.3999999761581,
+      "listMs": 1690.3999999761581,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "dwellMs": 0,
+      "early": false,
+      "clickMs": 1689.699999988079,
+      "listMs": 1689.699999988079,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "dwellMs": 0,
+      "early": true,
+      "clickMs": 1710.0999999642372,
+      "listMs": 1710.3999999761581,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "dwellMs": 500,
+      "early": false,
+      "clickMs": 1698.800000011921,
+      "listMs": 2202.900000035763,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "dwellMs": 500,
+      "early": true,
+      "clickMs": 1202.300000011921,
+      "listMs": 1712.1000000238419,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "dwellMs": 1500,
+      "early": false,
+      "clickMs": 1744.6000000238419,
+      "listMs": 3255.5,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "dwellMs": 1500,
+      "early": true,
+      "clickMs": 562.6000000238419,
+      "listMs": 2064.2000000476837,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "dwellMs": -1,
+      "early": false,
+      "clickMs": null,
+      "listMs": null,
+      "markerVerified": false,
+      "transfers": []
+    },
+    {
+      "round": 5,
+      "dwellMs": -1,
+      "early": true,
+      "clickMs": null,
+      "listMs": null,
+      "markerVerified": false,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "dwellMs": -1,
+      "early": true,
+      "clickMs": null,
+      "listMs": null,
+      "markerVerified": false,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "dwellMs": -1,
+      "early": false,
+      "clickMs": null,
+      "listMs": null,
+      "markerVerified": false,
+      "transfers": []
+    },
+    {
+      "round": 6,
+      "dwellMs": 1500,
+      "early": true,
+      "clickMs": 563.2000000476837,
+      "listMs": 2065.400000035763,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "dwellMs": 1500,
+      "early": false,
+      "clickMs": 1745,
+      "listMs": 3258.100000023842,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "dwellMs": 500,
+      "early": true,
+      "clickMs": 1199.800000011921,
+      "listMs": 1710.300000011921,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "dwellMs": 500,
+      "early": false,
+      "clickMs": 1731.699999988079,
+      "listMs": 2240.399999976158,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "dwellMs": 0,
+      "early": true,
+      "clickMs": 1746.699999988079,
+      "listMs": 1747,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "dwellMs": 0,
+      "early": false,
+      "clickMs": 1716.300000011921,
+      "listMs": 1716.300000011921,
+      "markerVerified": true,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "codec": "br",
+          "encodedBodyBytes": 1226
+        },
+        {
+          "path": "/wasm-worker.js",
+          "codec": "br",
+          "encodedBodyBytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "codec": "br",
+          "encodedBodyBytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "codec": "br",
+          "encodedBodyBytes": 433292
+        }
+      ]
+    }
+  ]
+}
