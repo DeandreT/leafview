@@ -1,10 +1,11 @@
-// bun bench/run.ts [output.json] | --smoke [pdfjs|wasm] | --serve
+// bun bench/run.ts [output.json] | --smoke [pdfjs|wasm] | --serve | --paced
 import { chromium, type Browser, type Page } from "playwright";
 import { createHash } from "node:crypto";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { cpus, release, totalmem } from "node:os";
 import { dirname, resolve, sep } from "node:path";
-import { gzipSync } from "node:zlib";
+import { brotliDecompressSync, gunzipSync, gzipSync } from "node:zlib";
+import { brotliQuality, encode, gzipLevel, rendererAssets } from "../scripts/precompress.mjs";
 import { verifyCanvas } from "../bench/markers.ts";
 
 const root = resolve(import.meta.dir, "..");
@@ -15,7 +16,31 @@ const engines = ["pdfjs", "wasm"] as const;
 type Engine = typeof engines[number];
 const smoke = process.argv[2] === "--smoke";
 const paced = process.argv[2] === "--paced";
-const wireCache = new Map<string, Buffer>();
+type Codec = "gzip" | "br";
+let codec: Codec = "gzip";
+const wireCache = new Map<string, Record<Codec, Buffer>>();
+type Transfer = { path: string; codec: Codec; encodedBodyBytes: number };
+let transfers: Transfer[] = [];
+const pacedAssets = [
+  ...rendererAssets, "index.html", "host.js", "pdfjs-engine.js", "pdfjs/build/pdf.min.mjs",
+  "pdfjs/build/pdf.worker.min.mjs", "fixtures/p250.pdf", "fixtures/p25.pdf",
+];
+function preparePacedAssets() {
+  return pacedAssets.map(path => {
+    const renderer = rendererAssets.includes(path);
+    const file = renderer && process.env.BENCH_WASM_DIR ? resolve(root, process.env.BENCH_WASM_DIR, path) :
+      resolve(root, path.startsWith("fixtures/") ? path : path.startsWith("pdfjs/") ?
+      `node_modules/pdfjs-dist/${path.slice(6)}` : `web/${path}`);
+    const raw = readFileSync(file);
+    const delivery = resolve(process.env.BENCH_DELIVERY_DIR || `${root}/artifacts/delivery`, path);
+    const variants = renderer ? { br: readFileSync(`${delivery}.br`), gzip: readFileSync(`${delivery}.gz`) } : encode(raw);
+    if (renderer && (!brotliDecompressSync(variants.br).equals(raw) || !gunzipSync(variants.gzip).equals(raw))) {
+      throw Error(`Stale delivery sidecars: ${path}. Run scripts/precompress.mjs.`);
+    }
+    wireCache.set(file, variants);
+    return { path: `/${path}`, sha256: sha(raw), rawBytes: raw.length, gzipBytes: variants.gzip.length, brBytes: variants.br.length };
+  });
+}
 const output = resolve(process.argv[2] && !process.argv[2].startsWith("--") ? process.argv[2] : `${root}/artifacts/results.json`);
 const assets = { pdfjs: new Map<string, string>(), wasm: new Map<string, string>() };
 let measuring: Engine | undefined;
@@ -32,11 +57,15 @@ const server = Bun.serve({
     if (measuring && !fixture && !["/", "/index.html", "/host.js"].includes(path)) assets[measuring].set(path, file);
     const type = /\.(?:m?js)$/.test(path) ? "text/javascript" : path.endsWith(".wasm") ? "application/wasm" : Bun.file(file).type;
     if (paced) {
-      let buf = wireCache.get(file);
-      if (!buf) { buf = gzipSync(readFileSync(file), { level:9 }); wireCache.set(file,buf); }
+      const encoded = wireCache.get(file)?.[codec];
+      if (!encoded || !req.headers.get("accept-encoding")?.split(/,\s*/).includes(codec)) {
+        throw Error(`Unprepared or unsupported ${codec} response: ${path}`);
+      }
       // Model one 40 ms request delay plus 10 Mbit/s per response, including worker requests.
       // Buffering is outside measurement after precompression. Never sleep in the browser.
-      const bytes = buf, start = performance.now();
+      const bytes = encoded, start = performance.now();
+      const record = { path, codec, encodedBodyBytes: 0 };
+      transfers.push(record);
       let pos = 0;
       await Bun.sleep(40);
       const body = new ReadableStream({
@@ -44,10 +73,12 @@ const server = Bun.serve({
           const end = Math.min(pos+32768,bytes.length);
           await Bun.sleep(Math.max(0, Math.ceil(start+40+end/1250-performance.now())));
           controller.enqueue(bytes.subarray(pos,end));
+          record.encodedBodyBytes += end - pos;
           pos=end; if (end === bytes.length) controller.close();
         }
       });
-      return new Response(body, {headers:{"Content-Encoding":"gzip","Content-Type":type,"Cache-Control":"no-store"}});
+      return new Response(body, {headers:{"Content-Encoding":codec,"Content-Type":type,
+        "Content-Length":String(bytes.length),"Cache-Control":"no-store","Vary":"Accept-Encoding"}});
     }
     return new Response(Bun.file(file), { headers: { "Content-Type": type } });
   },
@@ -217,28 +248,51 @@ try {
     console.log(`Preview host: ${server.url}`);
     await new Promise(() => {});
   } else if (paced) {
+    const files = preparePacedAssets();
     const b = await chromium.launch();
     try {
       const samples = [];
-      // Prime server compression only; each timed case has its own fresh browser context.
-      for(const f of ["pkg/folio_wasm.wasm", "wasm-engine.js", "wasm-worker.js", "pdfjs-engine.js"])
-        await (await fetch(new URL(f,server.url))).arrayBuffer();
-      for(const f of ["pdfjs/build/pdf.min.mjs","pdfjs/build/pdf.worker.min.mjs","fixtures/p250.pdf","fixtures/p25.pdf"])
-        await (await fetch(new URL(f,server.url))).arrayBuffer();
-      for(let r=0;r<rounds;r++) for(const engine of r%2 ? ["wasm","pdfjs"] as const : engines) {
-        const {p,ctx}=await app(b,engine);
-        try {
-          const t=await open(p,"p250");
-          const {ms}=await paint(p,t,"p250");
-          await settled(p,250);
-          const secondStart = await open(p,"p25");
-          const second = await paint(p,secondStart,"p25");
-          samples.push({engine,round:r,ms,secondDocumentMs:second.ms});
-        } finally { await ctx.close(); }
+      const cases = [["gzip","pdfjs"],["gzip","wasm"],["br","pdfjs"],["br","wasm"]] as const;
+      for (let round = 1; round <= rounds; round++) {
+        for (const [encoding, engine] of round % 2 ? cases : [...cases].reverse()) {
+          codec = encoding;
+          const {p,ctx} = await app(b,engine);
+          try {
+            const documents = [];
+            for (const n of [250,25]) {
+              transfers = [];
+              const id = `p${n}`, t = await open(p,id);
+              const {ms} = await paint(p,t,id);
+              await settled(p,n);
+              await checkSettled(p,id,1);
+              const wasmBodies = await p.evaluate(() => performance.getEntriesByType("resource")
+                .filter(e => new URL(e.name).pathname.endsWith(".wasm"))
+                .map(e => (e as PerformanceResourceTiming).encodedBodySize));
+              const wasmResponse = transfers.filter(f => f.path.endsWith(".wasm"));
+              const firstWasm = engine === "wasm" && n === 250;
+              const expectedWasm = firstWasm ? files.find(f => f.path.endsWith(".wasm"))![codec === "br" ? "brBytes" : "gzipBytes"] : 0;
+              if (wasmBodies.length !== Number(engine === "wasm") ||
+                  (firstWasm && wasmBodies[0] !== expectedWasm) || wasmResponse.length !== Number(firstWasm) ||
+                  (wasmResponse[0]?.encodedBodyBytes ?? 0) !== expectedWasm) throw Error("WASM transfer mismatch");
+              if (!transfers.some(f => f.path === `/fixtures/${id}.pdf`) ||
+                transfers.some(f => f.codec !== codec || f.encodedBodyBytes !== files.find(a => a.path === f.path)?.[codec === "br" ? "brBytes" : "gzipBytes"])) {
+                throw Error(`Incomplete ${codec} response: ${id}`);
+              }
+              documents.push({ id, mainMs: ms, verifiedMarkers: true,
+                wasmEncodedBodyBytes: firstWasm ? wasmBodies[0] : 0, transfers });
+            }
+            samples.push({ round, codec, engine, documents });
+          } finally { await ctx.close(); }
+        }
+        console.log(`Paced round ${round}/${rounds} complete`);
       }
-      mkdirSync(`${root}/results`,{recursive:true});
-      writeFileSync(process.env.BENCH_PACED_OUTPUT || `${root}/results/paced.json`,JSON.stringify({pageCount:250,perResponseMbit:10,
-        requestDelayMs:40,gzipLevel:9,samples},null,2)+"\n");
+      const dest = resolve(process.env.BENCH_PACED_OUTPUT || `${root}/artifacts/paced-codecs.json`);
+      mkdirSync(dirname(dest),{recursive:true});
+      writeFileSync(dest, JSON.stringify({ generatedAt: data.generatedAt, cpu: data.cpu, osRelease: data.osRelease,
+        arch: data.arch, platform: data.platform, bun: Bun.version, chromium: b.version(), pdfjs: data.pdfjs,
+        playwright: data.playwright, viewport, rounds, perResponseMbit:10, requestDelayMs:40, chunkBytes:32768,
+        cacheControl:"no-store", brotliQuality, gzipLevel, files, samples }, null, 2)+"\n");
+      console.log(dest);
     } finally { await b.close(); }
   } else if (smoke) {
     const selected = process.argv[3] ? engines.filter(x => x === process.argv[3]) : engines;

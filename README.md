@@ -17,6 +17,8 @@ The prototype covers the canvas preview used in a packet-review UI. Text selecti
 
 ## Benchmark
 
+**Delivery limit:** with static Brotli compression, Leafview shows the first preview in 1.32 s on a modeled 10 Mbit/s connection. Transferring the WASM module alone takes at least 1.18 s including request delay. The next distinct PDF opens in 385 ms with no module re-download. See the [comparison with PDF.js and static hosting instructions](results/static-delivery.md).
+
 The fixtures include text invoices, JPEG-based scan pages and rotated pages in 25- and 250-page packets. Each page encodes its document and page number as pixels. The scan asset is reused within a packet, so the corpus exercises navigation and cache behavior more than network throughput on large independent scans.
 
 **PDF.js wins first visits over a constrained network; Leafview wins subsequent packet opens in the same tab.** Leafview now compiles the renderer once per tab and shares the compiled code with new workers. Each PDF still has its own worker, private memory, and render cache. The release build uses WASM SIMD, whole-program optimization and a single code generation unit. Use a browser with WASM SIMD support.
@@ -51,6 +53,7 @@ bun bench/run.ts --smoke
 bun bench/fidelity.ts
 bun bench/run.ts artifacts/local-results.json
 python bench/summarize.py artifacts/local-results.json
+bun scripts/precompress.mjs
 bun bench/run.ts --paced
 ```
 
