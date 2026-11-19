@@ -2,23 +2,19 @@
 const MAX_BYTES = 64 * 1024 * 1024;
 let wasm;
 
-async function loadWasm() {
-  const response = await fetch(new URL("./pkg/folio_wasm.wasm", import.meta.url));
-  if (!response.ok) throw new Error(`WASM download failed (HTTP ${response.status})`);
-  const { instance } = response.headers.get("content-type")?.split(";")[0] === "application/wasm"
-    ? await WebAssembly.instantiateStreaming(response, {})
-    : await WebAssembly.instantiate(await response.arrayBuffer(), {});
-  return instance.exports;
-}
+let receiveCode;
+const code = new Promise(resolve => { receiveCode = resolve; });
 
 async function open(url) {
-  const [module, response] = await Promise.all([loadWasm(), fetch(url)]);
+  const [instance, response] = await Promise.all([
+    code.then(module => WebAssembly.instantiate(module, {})), fetch(url),
+  ]);
   if (!response.ok) throw new Error(`PDF download failed (HTTP ${response.status})`);
   if (Number(response.headers.get("content-length")) > MAX_BYTES) {
     throw new Error("PDF exceeds 64 MiB");
   }
   if (!response.body) throw new Error("PDF download has no body");
-  wasm = module;
+  wasm = instance.exports;
   // Stream into WASM. Enforce the limit on decoded bytes, even when
   // Content-Length is absent or describes a compressed response.
   const reader = response.body.getReader();
@@ -40,8 +36,9 @@ async function open(url) {
   return pageCount;
 }
 
-self.onmessage = async ({ data: { id, type, url, page, width } }) => {
+self.onmessage = async ({ data: { id, type, url, page, width, module } }) => {
   try {
+    if (type === "code") { receiveCode(module); return; }
     if (type === "open") {
       self.postMessage({ id, pageCount: await open(url) });
       return;

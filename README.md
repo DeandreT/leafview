@@ -19,16 +19,19 @@ The prototype covers the canvas preview used in a packet-review UI. Text selecti
 
 The fixtures include text invoices, JPEG-based scan pages and rotated pages in 25- and 250-page packets. Each page encodes its document and page number as pixels. The scan asset is reused within a packet, so the corpus exercises navigation and cache behavior more than network throughput on large independent scans.
 
-**Decision: keep PDF.js as the default for a web-delivered preview.** Folio wins local opens and median navigation, but its engine download is 4.5× larger. With a modeled 10 Mbit/s connection the cold-start winner reverses. After setup, the two engines have similar slow-click latency.
+**PDF.js wins first visits over a constrained network; Folio wins subsequent packet opens in the same tab.** Folio now compiles the renderer once per tab and shares the compiled code with new workers. Each PDF still has its own worker, private memory, and render cache. The release build uses WASM SIMD, whole-program optimization and a single code generation unit. Use a browser with WASM SIMD support.
 
 | 250-page packet, desktop Chromium | PDF.js | Folio WASM |
 |---|---:|---:|
-| Cold first preview, loopback | 150 ms | 90 ms |
-| Cold first preview, paced gzip delivery | 1.02 s | 1.72 s |
-| Reopen cached document, loopback | 30 ms | 14 ms |
-| Last click, median / p95 | 41 / 47 ms | 32 / 48 ms |
-| Browser private memory after ten 25-page packets | 171 MiB | 181 MiB |
-| Requested engine assets, gzip | 0.42 MB | 1.90 MB |
+| Cold first preview, loopback | 213 ms | 115 ms |
+| Cold first preview, paced gzip delivery | 1.05 s | 1.65 s |
+| Next distinct 25-page packet, same tab, paced | 698 ms | 381 ms |
+| Reopen cached document, loopback | 29 ms | 13 ms |
+| Last click, median / p95 | 40 / 47 ms | 30 / 48 ms |
+| Browser private memory after ten 25-page packets | 174 MiB | 143 MiB |
+| Requested engine assets, gzip | 0.42 MB | 1.85 MB |
+
+Before module sharing, the second distinct packet took [1.65 s](results/paced-before.json) in the same paced, `no-store` test. The 0.38 s result measures opening another document, not reopening a cached PDF. A production HTTP cache could narrow this difference. A smaller `opt-level="s"` scalar build cut the gzip payload to 1.66 MB, but pushed 250-page click p95 to 91 ms, so the speed build is preferred.
 
 Both engines used selected-page-first rendering, visible-only thumbnails, and at most two cached documents. Six alternating rounds in headless Chromium; first preview is measured from packet open in a loaded shell to the render-complete animation frame. The paced test adds 40 ms per request and serves gzipped responses at 10 Mbit/s **per response**, not an aggregate bandwidth cap. All 144 final click targets matched their page and packet pixel marker. Full-page ink overlap on five additional renders was 0.939–0.965; these checks cover layout and orientation, not full PDF feature parity.
 

@@ -25,7 +25,8 @@ const server = Bun.serve({
     const path = new URL(req.url).pathname;
     if (!/^\/[a-z0-9./_-]*$/i.test(path)) return new Response(null, { status: 400 });
     const vendor = path.startsWith("/pdfjs/"), fixture = path.startsWith("/fixtures/");
-    const base = resolve(root, vendor ? "node_modules/pdfjs-dist" : fixture ? "fixtures" : "web");
+    const archived = process.env.BENCH_WASM_DIR && ["/wasm-engine.js","/wasm-worker.js","/pkg/folio_wasm.wasm"].includes(path);
+    const base = resolve(root, archived ? process.env.BENCH_WASM_DIR! : vendor ? "node_modules/pdfjs-dist" : fixture ? "fixtures" : "web");
     const file = resolve(base, "." + (vendor ? path.slice(6) : fixture ? path.slice(9) : path === "/" ? "/index.html" : path));
     if (!file.startsWith(base + sep) || !await Bun.file(file).exists()) return new Response(null, { status: 404 });
     if (measuring && !fixture && !["/", "/index.html", "/host.js"].includes(path)) assets[measuring].set(path, file);
@@ -222,18 +223,21 @@ try {
       // Prime server compression only; each timed case has its own fresh browser context.
       for(const f of ["pkg/folio_wasm.wasm", "wasm-engine.js", "wasm-worker.js", "pdfjs-engine.js"])
         await (await fetch(new URL(f,server.url))).arrayBuffer();
-      for(const f of ["pdfjs/build/pdf.min.mjs","pdfjs/build/pdf.worker.min.mjs","fixtures/p250.pdf"])
+      for(const f of ["pdfjs/build/pdf.min.mjs","pdfjs/build/pdf.worker.min.mjs","fixtures/p250.pdf","fixtures/p25.pdf"])
         await (await fetch(new URL(f,server.url))).arrayBuffer();
       for(let r=0;r<rounds;r++) for(const engine of r%2 ? ["wasm","pdfjs"] as const : engines) {
         const {p,ctx}=await app(b,engine);
         try {
           const t=await open(p,"p250");
           const {ms}=await paint(p,t,"p250");
-          samples.push({engine,round:r,ms});
+          await settled(p,250);
+          const secondStart = await open(p,"p25");
+          const second = await paint(p,secondStart,"p25");
+          samples.push({engine,round:r,ms,secondDocumentMs:second.ms});
         } finally { await ctx.close(); }
       }
       mkdirSync(`${root}/results`,{recursive:true});
-      writeFileSync(`${root}/results/paced.json`,JSON.stringify({pageCount:250,perResponseMbit:10,
+      writeFileSync(process.env.BENCH_PACED_OUTPUT || `${root}/results/paced.json`,JSON.stringify({pageCount:250,perResponseMbit:10,
         requestDelayMs:40,gzipLevel:9,samples},null,2)+"\n");
     } finally { await b.close(); }
   } else if (smoke) {

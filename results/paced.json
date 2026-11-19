@@ -7,62 +7,74 @@
     {
       "engine": "pdfjs",
       "round": 0,
-      "ms": 1025
+      "ms": 1039,
+      "secondDocumentMs": 696.2000000476837
     },
     {
       "engine": "wasm",
       "round": 0,
-      "ms": 1722.4000000357628
+      "ms": 1671,
+      "secondDocumentMs": 379.69999998807907
     },
     {
       "engine": "wasm",
       "round": 1,
-      "ms": 1703.4000000357628
+      "ms": 1628.5,
+      "secondDocumentMs": 379.39999997615814
     },
     {
       "engine": "pdfjs",
       "round": 1,
-      "ms": 1016.1999999880791
+      "ms": 1079.9000000357628,
+      "secondDocumentMs": 697.8999999761581
     },
     {
       "engine": "pdfjs",
       "round": 2,
-      "ms": 1007.8000000119209
+      "ms": 1077.8999999761581,
+      "secondDocumentMs": 784.8999999761581
     },
     {
       "engine": "wasm",
       "round": 2,
-      "ms": 1717.2000000476837
+      "ms": 1690.6000000238419,
+      "secondDocumentMs": 392.10000002384186
     },
     {
       "engine": "wasm",
       "round": 3,
-      "ms": 1707
+      "ms": 1642.300000011921,
+      "secondDocumentMs": 383.5
     },
     {
       "engine": "pdfjs",
       "round": 3,
-      "ms": 991.5999999642372
+      "ms": 1047.5,
+      "secondDocumentMs": 682.1999999880791
     },
     {
       "engine": "pdfjs",
       "round": 4,
-      "ms": 1024.6000000238419
+      "ms": 1028.4000000357628,
+      "secondDocumentMs": 706.2000000476837
     },
     {
       "engine": "wasm",
       "round": 4,
-      "ms": 1751.5
+      "ms": 1636.199999988079,
+      "secondDocumentMs": 381
     },
     {
       "engine": "wasm",
       "round": 5,
-      "ms": 1717
+      "ms": 1650.4000000357628,
+      "secondDocumentMs": 381.4000000357628
     },
     {
       "engine": "pdfjs",
       "round": 5,
-      "ms": 1051.6000000238419
+      "ms": 1044.2000000476837,
+      "secondDocumentMs": 698.5
     }
   ]
 }

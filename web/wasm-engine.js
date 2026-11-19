@@ -1,3 +1,15 @@
+// Cache compiled code across packet opens; each worker still gets private memory.
+let compiled;
+function loadCode() {
+  return compiled ??= (async () => {
+    const response = await fetch(new URL("./pkg/folio_wasm.wasm", import.meta.url));
+    if (!response.ok) throw new Error(`WASM download failed (HTTP ${response.status})`);
+    return response.headers.get("content-type")?.split(";")[0] === "application/wasm"
+      ? WebAssembly.compileStreaming(response)
+      : WebAssembly.compile(await response.arrayBuffer());
+  })().catch(err => { compiled = undefined; throw err; });
+}
+
 /**
  * Parse a PDF in a dedicated worker. render() sizes the backing canvas to
  * the requested pixel width. destroy() aborts pending work and releases all
@@ -46,7 +58,11 @@ export async function openDocument(url) {
     });
   }
 
-  const { pageCount } = await rpc({ type: "open", url: absoluteURL });
+  const opened = rpc({ type: "open", url: absoluteURL });
+  loadCode().then(module => {
+    if (!stopped) worker.postMessage({ type: "code", module });
+  }).catch(stop);
+  const { pageCount } = await opened;
   return {
     pageCount,
     async render(pageOneBased, width, canvas) {

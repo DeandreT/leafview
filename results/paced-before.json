@@ -1,0 +1,80 @@
+{
+  "pageCount": 250,
+  "perResponseMbit": 10,
+  "requestDelayMs": 40,
+  "gzipLevel": 9,
+  "samples": [
+    {
+      "engine": "pdfjs",
+      "round": 0,
+      "ms": 1105.2000000476837,
+      "secondDocumentMs": 681.1000000238419
+    },
+    {
+      "engine": "wasm",
+      "round": 0,
+      "ms": 1755.300000011921,
+      "secondDocumentMs": 1647.9000000357628
+    },
+    {
+      "engine": "wasm",
+      "round": 1,
+      "ms": 1708.699999988079,
+      "secondDocumentMs": 1645.300000011921
+    },
+    {
+      "engine": "pdfjs",
+      "round": 1,
+      "ms": 989.8999999761581,
+      "secondDocumentMs": 664.3999999761581
+    },
+    {
+      "engine": "pdfjs",
+      "round": 2,
+      "ms": 985.1999999880791,
+      "secondDocumentMs": 664
+    },
+    {
+      "engine": "wasm",
+      "round": 2,
+      "ms": 1712.2000000476837,
+      "secondDocumentMs": 1647.5
+    },
+    {
+      "engine": "wasm",
+      "round": 3,
+      "ms": 1708.2000000476837,
+      "secondDocumentMs": 1647.6000000238419
+    },
+    {
+      "engine": "pdfjs",
+      "round": 3,
+      "ms": 983.6999999880791,
+      "secondDocumentMs": 681
+    },
+    {
+      "engine": "pdfjs",
+      "round": 4,
+      "ms": 1001,
+      "secondDocumentMs": 664.9000000357628
+    },
+    {
+      "engine": "wasm",
+      "round": 4,
+      "ms": 1711.5,
+      "secondDocumentMs": 1648
+    },
+    {
+      "engine": "wasm",
+      "round": 5,
+      "ms": 1699,
+      "secondDocumentMs": 1647.5
+    },
+    {
+      "engine": "pdfjs",
+      "round": 5,
+      "ms": 984.8999999761581,
+      "secondDocumentMs": 662.3000000119209
+    }
+  ]
+}
