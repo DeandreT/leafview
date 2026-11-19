@@ -17,6 +17,8 @@ The prototype covers the canvas preview used in a packet-review UI. Text selecti
 
 ## Benchmark
 
+See the [optimization study index](results/optimization-studies.md) for on-demand font and character-map loading, packet-list preloading, independent scanned documents, and worker canvas presentation.
+
 **Delivery limit:** with static Brotli compression, Leafview shows the first preview in 1.32 s on a modeled 10 Mbit/s connection. Transferring the WASM module alone takes at least 1.18 s including request delay. The next distinct PDF opens in 385 ms with no module re-download. See the [comparison with PDF.js and static hosting instructions](results/static-delivery.md).
 
 The fixtures include text invoices, JPEG-based scan pages and rotated pages in 25- and 250-page packets. Each page encodes its document and page number as pixels. The scan asset is reused within a packet, so the corpus exercises navigation and cache behavior more than network throughput on large independent scans.

@@ -1,0 +1,5698 @@
+{
+  "generatedAt": "2026-11-19T20:32:47.883Z",
+  "windows": "10.0.26300",
+  "cpu": "AMD Ryzen 7 PRO 8840U w/ Radeon 780M Graphics  ",
+  "ramBytes": 32928129024,
+  "bun": "1.4.5",
+  "playwright": "1.65.0",
+  "chromium": "158.0.8127.18",
+  "sha256": {
+    "wasm": "a17961649ab20bba89cc55f0f449c9a69441df70bfeed96661e3977d19817a45",
+    "pdf": "1e42ad4b883eed894ec3dac031efe1d55a538be0bda77ec6b8141b8bd6729b2e",
+    "engine": "952787856b0961ed7a52922ad3d0cada250531d32c7d780f02d02c773cfdbcdb",
+    "worker": "388c97dc34a28fee0dec475df77bed359ac14c3b6c26162d43e47458d0aca3bc",
+    "bitmapEngine": "67d9aa7ce8a6813513c8510ad515f15d67a1b595f1cf08c4a898a0161ad94443",
+    "bitmapWorker": "602c4131608632e13db4e6772a9a744331d9ed84b374149c5c864e630b0d853d"
+  },
+  "widths": [
+    900,
+    1600
+  ],
+  "rounds": 6,
+  "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    2,
+    1,
+    5,
+    3,
+    4,
+    8
+  ],
+  "runs": [
+    {
+      "round": 1,
+      "mode": "baseline",
+      "width": 900,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 58672,
+          "type": "GPU"
+        },
+        {
+          "pid": 62548,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 64804,
+          "type": "browser"
+        },
+        {
+          "pid": 65428,
+          "type": "renderer"
+        }
+      ],
+      "memory": {
+        "count": 39,
+        "peakBytes": 186671104,
+        "initialBytes": 154619904,
+        "medianGapMs": 10.635049984557554,
+        "maxGapMs": 11.799199972301722,
+        "spanMs": 405.92509997077286
+      },
+      "samples": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 5.599999964237213,
+          "mainSubmitMs": 1.800000011920929,
+          "afterFrameMs": 8.599999964237213,
+          "verifiedMs": 8.699999988079071,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 17.099999964237213,
+          "mainSubmitMs": 0.3999999761581421,
+          "afterFrameMs": 47.19999998807907,
+          "verifiedMs": 47.39999997615814,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 4.100000023841858,
+          "mainSubmitMs": 0.800000011920929,
+          "afterFrameMs": 30.100000023841858,
+          "verifiedMs": 30.30000001192093,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 3.5,
+          "mainSubmitMs": 1,
+          "afterFrameMs": 31.80000001192093,
+          "verifiedMs": 31.900000035762787,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 15.600000023841858,
+          "mainSubmitMs": 0.19999998807907104,
+          "afterFrameMs": 31.600000023841858,
+          "verifiedMs": 31.69999998807907,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.600000023841858,
+          "mainSubmitMs": 0.800000011920929,
+          "afterFrameMs": 31,
+          "verifiedMs": 31.100000023841858,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 15,
+          "mainSubmitMs": 1.0999999642372131,
+          "afterFrameMs": 31.30000001192093,
+          "verifiedMs": 31.400000035762787,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 3.799999952316284,
+          "mainSubmitMs": 0.30000001192092896,
+          "afterFrameMs": 30.799999952316284,
+          "verifiedMs": 30.899999976158142,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 16.19999998807907,
+          "mainSubmitMs": 0.30000001192092896,
+          "afterFrameMs": 31.30000001192093,
+          "verifiedMs": 31.399999976158142,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.100000023841858,
+          "mainSubmitMs": 0.7000000476837158,
+          "afterFrameMs": 31.69999998807907,
+          "verifiedMs": 31.899999976158142,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 3.599999964237213,
+          "mainSubmitMs": 1.199999988079071,
+          "afterFrameMs": 31.19999998807907,
+          "verifiedMs": 31.30000001192093,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 2.800000011920929,
+          "mainSubmitMs": 0.5,
+          "afterFrameMs": 31.899999976158142,
+          "verifiedMs": 32.10000002384186,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "mode": "bitmap",
+      "width": 900,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 62608,
+          "type": "browser"
+        },
+        {
+          "pid": 65284,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 67816,
+          "type": "GPU"
+        },
+        {
+          "pid": 68516,
+          "type": "renderer"
+        }
+      ],
+      "memory": {
+        "count": 42,
+        "peakBytes": 155447296,
+        "initialBytes": 145104896,
+        "medianGapMs": 10.588500008452684,
+        "maxGapMs": 12.351399986073375,
+        "spanMs": 436.0785000026226
+      },
+      "samples": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 4.699999988079071,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 19.900000035762787,
+          "verifiedMs": 20,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 26.899999976158142,
+          "mainSubmitMs": 0.10000002384185791,
+          "afterFrameMs": 33.19999998807907,
+          "verifiedMs": 33.299999952316284,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.199999988079071,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 29.100000023841858,
+          "verifiedMs": 29.30000001192093,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 5.399999976158142,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.69999998807907,
+          "verifiedMs": 32.89999997615814,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 30.900000035762787,
+          "mainSubmitMs": 0.10000002384185791,
+          "afterFrameMs": 63.60000002384186,
+          "verifiedMs": 63.80000001192093,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.699999988079071,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.399999976158142,
+          "verifiedMs": 31.5,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 19,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.599999964237213,
+          "verifiedMs": 31.69999998807907,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 2.199999988079071,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.80000001192093,
+          "verifiedMs": 32.89999997615814,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 17.69999998807907,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.30000001192093,
+          "verifiedMs": 31.399999976158142,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 2.899999976158142,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 30.80000001192093,
+          "verifiedMs": 30.899999976158142,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 4.299999952316284,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.69999998807907,
+          "verifiedMs": 32.89999997615814,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.5,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 30.80000001192093,
+          "verifiedMs": 31,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "mode": "baseline",
+      "width": 1600,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 33356,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 49500,
+          "type": "renderer"
+        },
+        {
+          "pid": 52156,
+          "type": "GPU"
+        },
+        {
+          "pid": 57900,
+          "type": "browser"
+        }
+      ],
+      "memory": {
+        "count": 44,
+        "peakBytes": 264286208,
+        "initialBytes": 195395584,
+        "medianGapMs": 10.585899988655001,
+        "maxGapMs": 11.727599950972944,
+        "spanMs": 457.3848999571055
+      },
+      "samples": [
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 14.5,
+          "mainSubmitMs": 5.199999988079071,
+          "afterFrameMs": 21.899999976158142,
+          "verifiedMs": 22,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 31.600000023841858,
+          "mainSubmitMs": 1.699999988079071,
+          "afterFrameMs": 38.60000002384186,
+          "verifiedMs": 38.80000001192093,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 12.300000011920929,
+          "mainSubmitMs": 2.800000011920929,
+          "afterFrameMs": 37.90000003576279,
+          "verifiedMs": 38,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 12.199999988079071,
+          "mainSubmitMs": 4.5,
+          "afterFrameMs": 28,
+          "verifiedMs": 28.19999998807907,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 24.599999964237213,
+          "mainSubmitMs": 0.7999999523162842,
+          "afterFrameMs": 32.80000001192093,
+          "verifiedMs": 32.89999997615814,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 15.599999964237213,
+          "mainSubmitMs": 2.399999976158142,
+          "afterFrameMs": 33.59999996423721,
+          "verifiedMs": 33.80000001192093,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 26.80000001192093,
+          "mainSubmitMs": 3.699999988079071,
+          "afterFrameMs": 33.40000003576279,
+          "verifiedMs": 33.700000047683716,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 7.199999988079071,
+          "mainSubmitMs": 0.8999999761581421,
+          "afterFrameMs": 22.30000001192093,
+          "verifiedMs": 22.5,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 20.400000035762787,
+          "mainSubmitMs": 1.100000023841858,
+          "afterFrameMs": 48,
+          "verifiedMs": 48.10000002384186,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 8.400000035762787,
+          "mainSubmitMs": 2.100000023841858,
+          "afterFrameMs": 31.5,
+          "verifiedMs": 31.600000023841858,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 9.5,
+          "mainSubmitMs": 3.200000047683716,
+          "afterFrameMs": 30.799999952316284,
+          "verifiedMs": 30.899999976158142,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 7.199999988079071,
+          "mainSubmitMs": 1.899999976158142,
+          "afterFrameMs": 26.899999976158142,
+          "verifiedMs": 27.100000023841858,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "mode": "bitmap",
+      "width": 1600,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 8840,
+          "type": "browser"
+        },
+        {
+          "pid": 58672,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 59576,
+          "type": "GPU"
+        },
+        {
+          "pid": 63764,
+          "type": "renderer"
+        }
+      ],
+      "memory": {
+        "count": 38,
+        "peakBytes": 197210112,
+        "initialBytes": 173158400,
+        "medianGapMs": 10.624500049743801,
+        "maxGapMs": 11.616499978117645,
+        "spanMs": 395.5122000188567
+      },
+      "samples": [
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 9.5,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 13.5,
+          "verifiedMs": 13.699999988079071,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 18.30000001192093,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.69999998807907,
+          "verifiedMs": 31.80000001192093,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 7,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.600000023841858,
+          "verifiedMs": 31.80000001192093,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 8.399999976158142,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.399999976158142,
+          "verifiedMs": 31.5,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 19.100000023841858,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.30000001192093,
+          "verifiedMs": 31.400000035762787,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 6.300000011920929,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.40000003576279,
+          "verifiedMs": 32.60000002384186,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 24.399999976158142,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.19999998807907,
+          "verifiedMs": 31.399999976158142,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 6.100000023841858,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.10000002384186,
+          "verifiedMs": 32.200000047683716,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 21.100000023841858,
+          "mainSubmitMs": 0.10000002384185791,
+          "afterFrameMs": 32.10000002384186,
+          "verifiedMs": 32.200000047683716,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 7.600000023841858,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31,
+          "verifiedMs": 31.100000023841858,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 8.899999976158142,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32,
+          "verifiedMs": 32,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 6.300000011920929,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.5,
+          "verifiedMs": 31.69999998807907,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "mode": "bitmap",
+      "width": 1600,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 33544,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 53272,
+          "type": "GPU"
+        },
+        {
+          "pid": 63988,
+          "type": "renderer"
+        },
+        {
+          "pid": 67076,
+          "type": "browser"
+        }
+      ],
+      "memory": {
+        "count": 37,
+        "peakBytes": 196177920,
+        "initialBytes": 170147840,
+        "medianGapMs": 10.592800012091175,
+        "maxGapMs": 11.474700004328042,
+        "spanMs": 382.3059999849647
+      },
+      "samples": [
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 3.399999976158142,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 8.399999976158142,
+          "verifiedMs": 8.599999964237213,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 10.200000047683716,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 29,
+          "verifiedMs": 29.200000047683716,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 23.80000001192093,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.099999964237213,
+          "verifiedMs": 31.30000001192093,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 6.599999964237213,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.5,
+          "verifiedMs": 31.599999964237213,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 22,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.399999976158142,
+          "verifiedMs": 31.599999964237213,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 4.800000011920929,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.30000001192093,
+          "verifiedMs": 32.30000001192093,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 19.900000035762787,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.30000001192093,
+          "verifiedMs": 31.5,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 17.5,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31,
+          "verifiedMs": 31.099999964237213,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 7.700000047683716,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.10000002384186,
+          "verifiedMs": 32.200000047683716,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 5.600000023841858,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 29.5,
+          "verifiedMs": 29.600000023841858,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 10.300000011920929,
+          "mainSubmitMs": 0.10000002384185791,
+          "afterFrameMs": 32.10000002384186,
+          "verifiedMs": 32.19999998807907,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 20.69999998807907,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.09999996423721,
+          "verifiedMs": 32.299999952316284,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "mode": "baseline",
+      "width": 1600,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 9580,
+          "type": "browser"
+        },
+        {
+          "pid": 55408,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 65324,
+          "type": "GPU"
+        },
+        {
+          "pid": 66296,
+          "type": "renderer"
+        }
+      ],
+      "memory": {
+        "count": 40,
+        "peakBytes": 263729152,
+        "initialBytes": 200744960,
+        "medianGapMs": 10.572099999990314,
+        "maxGapMs": 13.016699987929314,
+        "spanMs": 415.2616000501439
+      },
+      "samples": [
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 4.899999976158142,
+          "mainSubmitMs": 0.5,
+          "afterFrameMs": 17.100000023841858,
+          "verifiedMs": 17.19999998807907,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 12.099999964237213,
+          "mainSubmitMs": 4.399999976158142,
+          "afterFrameMs": 32.19999998807907,
+          "verifiedMs": 32.30000001192093,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 19.600000023841858,
+          "mainSubmitMs": 0.9000000357627869,
+          "afterFrameMs": 29.900000035762787,
+          "verifiedMs": 30,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 8.800000011920929,
+          "mainSubmitMs": 2.100000023841858,
+          "afterFrameMs": 29,
+          "verifiedMs": 29.099999964237213,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 29.599999964237213,
+          "mainSubmitMs": 4.5,
+          "afterFrameMs": 36.59999996423721,
+          "verifiedMs": 43.09999996423721,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 6.199999988079071,
+          "mainSubmitMs": 0.7999999523162842,
+          "afterFrameMs": 30.900000035762787,
+          "verifiedMs": 31.100000023841858,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 17.600000023841858,
+          "mainSubmitMs": 0.9000000357627869,
+          "afterFrameMs": 31.19999998807907,
+          "verifiedMs": 31.30000001192093,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 9.100000023841858,
+          "mainSubmitMs": 2,
+          "afterFrameMs": 31.69999998807907,
+          "verifiedMs": 31.899999976158142,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 12.199999988079071,
+          "mainSubmitMs": 4.100000023841858,
+          "afterFrameMs": 28.299999952316284,
+          "verifiedMs": 28.399999976158142,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 8.100000023841858,
+          "mainSubmitMs": 2.200000047683716,
+          "afterFrameMs": 29.30000001192093,
+          "verifiedMs": 29.69999998807907,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 11.100000023841858,
+          "mainSubmitMs": 4.600000023841858,
+          "afterFrameMs": 28.69999998807907,
+          "verifiedMs": 28.80000001192093,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 19.700000047683716,
+          "mainSubmitMs": 0.9000000357627869,
+          "afterFrameMs": 31,
+          "verifiedMs": 31.100000023841858,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "mode": "bitmap",
+      "width": 900,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 48312,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 53080,
+          "type": "browser"
+        },
+        {
+          "pid": 65628,
+          "type": "GPU"
+        },
+        {
+          "pid": 66388,
+          "type": "renderer"
+        }
+      ],
+      "memory": {
+        "count": 38,
+        "peakBytes": 150204416,
+        "initialBytes": 141619200,
+        "medianGapMs": 10.621299967169762,
+        "maxGapMs": 12.215499999001622,
+        "spanMs": 395.1528000179678
+      },
+      "samples": [
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 2.400000035762787,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 13,
+          "verifiedMs": 13.200000047683716,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 5.699999988079071,
+          "mainSubmitMs": 0.10000002384185791,
+          "afterFrameMs": 31.899999976158142,
+          "verifiedMs": 32,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 25.099999964237213,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.899999976158142,
+          "verifiedMs": 32,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.299999952316284,
+          "mainSubmitMs": 0.09999996423721313,
+          "afterFrameMs": 30.799999952316284,
+          "verifiedMs": 30.899999976158142,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 25.30000001192093,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.100000023841858,
+          "verifiedMs": 31.19999998807907,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 3.100000023841858,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.600000023841858,
+          "verifiedMs": 31.700000047683716,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 22.19999998807907,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31,
+          "verifiedMs": 31.19999998807907,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.099999964237213,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.5,
+          "verifiedMs": 32.69999998807907,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 5.300000011920929,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.19999998807907,
+          "verifiedMs": 31.30000001192093,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.100000023841858,
+          "mainSubmitMs": 0.10000002384185791,
+          "afterFrameMs": 32.10000002384186,
+          "verifiedMs": 32.30000001192093,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 3.699999988079071,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 27.30000001192093,
+          "verifiedMs": 27.400000035762787,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 18.69999998807907,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.900000035762787,
+          "verifiedMs": 32,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "mode": "baseline",
+      "width": 900,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 42560,
+          "type": "GPU"
+        },
+        {
+          "pid": 45532,
+          "type": "renderer"
+        },
+        {
+          "pid": 60016,
+          "type": "browser"
+        },
+        {
+          "pid": 68156,
+          "type": "network.mojom.NetworkService"
+        }
+      ],
+      "memory": {
+        "count": 37,
+        "peakBytes": 168009728,
+        "initialBytes": 155209728,
+        "medianGapMs": 10.642850014846772,
+        "maxGapMs": 11.919799959287047,
+        "spanMs": 385.8522999798879
+      },
+      "samples": [
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 2.800000011920929,
+          "mainSubmitMs": 0.19999998807907104,
+          "afterFrameMs": 9.100000023841858,
+          "verifiedMs": 9.300000011920929,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 6.400000035762787,
+          "mainSubmitMs": 1.7000000476837158,
+          "afterFrameMs": 31.30000001192093,
+          "verifiedMs": 31.5,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 24.19999998807907,
+          "mainSubmitMs": 0.30000001192092896,
+          "afterFrameMs": 32.19999998807907,
+          "verifiedMs": 32.39999997615814,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 5.300000011920929,
+          "mainSubmitMs": 0.9000000357627869,
+          "afterFrameMs": 29.600000023841858,
+          "verifiedMs": 29.80000001192093,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 26.30000001192093,
+          "mainSubmitMs": 1.2000000476837158,
+          "afterFrameMs": 33.5,
+          "verifiedMs": 33.59999996423721,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 4.100000023841858,
+          "mainSubmitMs": 0.30000001192092896,
+          "afterFrameMs": 27.80000001192093,
+          "verifiedMs": 28,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 22.600000023841858,
+          "mainSubmitMs": 0.30000001192092896,
+          "afterFrameMs": 31.600000023841858,
+          "verifiedMs": 31.80000001192093,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 5.600000023841858,
+          "mainSubmitMs": 1.300000011920929,
+          "afterFrameMs": 30.100000023841858,
+          "verifiedMs": 30.19999998807907,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 5.099999964237213,
+          "mainSubmitMs": 1.5,
+          "afterFrameMs": 31.599999964237213,
+          "verifiedMs": 31.80000001192093,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 4.5,
+          "mainSubmitMs": 0.9000000357627869,
+          "afterFrameMs": 30.299999952316284,
+          "verifiedMs": 30.5,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 6.299999952316284,
+          "mainSubmitMs": 1.5999999642372131,
+          "afterFrameMs": 30.69999998807907,
+          "verifiedMs": 30.799999952316284,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 24.599999964237213,
+          "mainSubmitMs": 0.3999999761581421,
+          "afterFrameMs": 32,
+          "verifiedMs": 32.09999996423721,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "mode": "baseline",
+      "width": 900,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 61640,
+          "type": "browser"
+        },
+        {
+          "pid": 63888,
+          "type": "GPU"
+        },
+        {
+          "pid": 67792,
+          "type": "renderer"
+        },
+        {
+          "pid": 67944,
+          "type": "network.mojom.NetworkService"
+        }
+      ],
+      "memory": {
+        "count": 42,
+        "peakBytes": 170999808,
+        "initialBytes": 152137728,
+        "medianGapMs": 10.72830002522096,
+        "maxGapMs": 13.222899986431003,
+        "spanMs": 447.117600007914
+      },
+      "samples": [
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 33.60000002384186,
+          "mainSubmitMs": 2.199999988079071,
+          "afterFrameMs": 36.80000001192093,
+          "verifiedMs": 37,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 6.199999988079071,
+          "mainSubmitMs": 1,
+          "afterFrameMs": 26.099999964237213,
+          "verifiedMs": 26.30000001192093,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 31.600000023841858,
+          "mainSubmitMs": 1.7999999523162842,
+          "afterFrameMs": 45.700000047683716,
+          "verifiedMs": 45.90000003576279,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 5.399999976158142,
+          "mainSubmitMs": 0.30000001192092896,
+          "afterFrameMs": 30,
+          "verifiedMs": 30.19999998807907,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 28.5,
+          "mainSubmitMs": 0.40000003576278687,
+          "afterFrameMs": 36.799999952316284,
+          "verifiedMs": 37.09999996423721,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 6.899999976158142,
+          "mainSubmitMs": 1.399999976158142,
+          "afterFrameMs": 13.399999976158142,
+          "verifiedMs": 13.599999964237213,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 7.699999988079071,
+          "mainSubmitMs": 1.7999999523162842,
+          "afterFrameMs": 30.400000035762787,
+          "verifiedMs": 30.600000023841858,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 7.5,
+          "mainSubmitMs": 1.100000023841858,
+          "afterFrameMs": 10.300000011920929,
+          "verifiedMs": 10.5,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 6.300000011920929,
+          "mainSubmitMs": 1.5,
+          "afterFrameMs": 23.399999976158142,
+          "verifiedMs": 23.69999998807907,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 32.30000001192093,
+          "mainSubmitMs": 0.5,
+          "afterFrameMs": 40.69999998807907,
+          "verifiedMs": 40.90000003576279,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 4.900000035762787,
+          "mainSubmitMs": 1.100000023841858,
+          "afterFrameMs": 30.80000001192093,
+          "verifiedMs": 31,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 10.100000023841858,
+          "mainSubmitMs": 2.400000035762787,
+          "afterFrameMs": 30,
+          "verifiedMs": 30.100000023841858,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "mode": "bitmap",
+      "width": 900,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 50940,
+          "type": "GPU"
+        },
+        {
+          "pid": 65384,
+          "type": "renderer"
+        },
+        {
+          "pid": 67692,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 68304,
+          "type": "browser"
+        }
+      ],
+      "memory": {
+        "count": 44,
+        "peakBytes": 149114880,
+        "initialBytes": 143699968,
+        "medianGapMs": 10.826800018548965,
+        "maxGapMs": 14.26199998240918,
+        "spanMs": 474.04780000215396
+      },
+      "samples": [
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 31.80000001192093,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 49.19999998807907,
+          "verifiedMs": 49.39999997615814,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 7.800000011920929,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 28.80000001192093,
+          "verifiedMs": 29,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 33.60000002384186,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 63.80000001192093,
+          "verifiedMs": 63.90000003576279,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 3.399999976158142,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 27,
+          "verifiedMs": 27.19999998807907,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 28.5,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 29.700000047683716,
+          "verifiedMs": 29.80000001192093,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 4.899999976158142,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 27.80000001192093,
+          "verifiedMs": 28,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 5.899999976158142,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 25.5,
+          "verifiedMs": 25.69999998807907,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 5,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 29.900000035762787,
+          "verifiedMs": 30,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 5.199999988079071,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 24,
+          "verifiedMs": 24.19999998807907,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 28.399999976158142,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32,
+          "verifiedMs": 32.10000002384186,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 7.5,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 24.799999952316284,
+          "verifiedMs": 25,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 5.299999952316284,
+          "mainSubmitMs": 0.09999996423721313,
+          "afterFrameMs": 31.599999964237213,
+          "verifiedMs": 31.799999952316284,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "mode": "baseline",
+      "width": 1600,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 62516,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 63432,
+          "type": "browser"
+        },
+        {
+          "pid": 64192,
+          "type": "GPU"
+        },
+        {
+          "pid": 66956,
+          "type": "renderer"
+        }
+      ],
+      "memory": {
+        "count": 50,
+        "peakBytes": 264552448,
+        "initialBytes": 196268032,
+        "medianGapMs": 10.708599991630763,
+        "maxGapMs": 13.939499971456826,
+        "spanMs": 532.4928999762051
+      },
+      "samples": [
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 33.799999952316284,
+          "mainSubmitMs": 5.099999964237213,
+          "afterFrameMs": 42.5,
+          "verifiedMs": 42.59999996423721,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 12.5,
+          "mainSubmitMs": 2.900000035762787,
+          "afterFrameMs": 37.89999997615814,
+          "verifiedMs": 38.09999996423721,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 37,
+          "mainSubmitMs": 4.899999976158142,
+          "afterFrameMs": 65.30000001192093,
+          "verifiedMs": 65.39999997615814,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 10.699999988079071,
+          "mainSubmitMs": 1.100000023841858,
+          "afterFrameMs": 28.30000001192093,
+          "verifiedMs": 28.5,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 36.09999996423721,
+          "mainSubmitMs": 1,
+          "afterFrameMs": 48.799999952316284,
+          "verifiedMs": 49,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 11.299999952316284,
+          "mainSubmitMs": 2.800000011920929,
+          "afterFrameMs": 27.5,
+          "verifiedMs": 27.599999964237213,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 16,
+          "mainSubmitMs": 4,
+          "afterFrameMs": 32.30000001192093,
+          "verifiedMs": 32.5,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 10.199999988079071,
+          "mainSubmitMs": 2.5,
+          "afterFrameMs": 22.399999976158142,
+          "verifiedMs": 22.600000023841858,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 13,
+          "mainSubmitMs": 4.300000011920929,
+          "afterFrameMs": 29.30000001192093,
+          "verifiedMs": 29.5,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 29.299999952316284,
+          "mainSubmitMs": 0.8999999761581421,
+          "afterFrameMs": 56.5,
+          "verifiedMs": 56.5,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 10.5,
+          "mainSubmitMs": 2.599999964237213,
+          "afterFrameMs": 32.40000003576279,
+          "verifiedMs": 32.60000002384186,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 14.5,
+          "mainSubmitMs": 5.5,
+          "afterFrameMs": 30.099999964237213,
+          "verifiedMs": 30.19999998807907,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "mode": "bitmap",
+      "width": 1600,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 21124,
+          "type": "browser"
+        },
+        {
+          "pid": 46608,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 62120,
+          "type": "renderer"
+        },
+        {
+          "pid": 66928,
+          "type": "GPU"
+        }
+      ],
+      "memory": {
+        "count": 44,
+        "peakBytes": 195018752,
+        "initialBytes": 171417600,
+        "medianGapMs": 10.591300029773265,
+        "maxGapMs": 14.785500010475516,
+        "spanMs": 460.72520001325756
+      },
+      "samples": [
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 35.5,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 45.09999996423721,
+          "verifiedMs": 45.299999952316284,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 9.200000047683716,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.700000047683716,
+          "verifiedMs": 31.900000035762787,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 33.40000003576279,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 64.60000002384186,
+          "verifiedMs": 64.80000001192093,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 7.799999952316284,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 30.399999976158142,
+          "verifiedMs": 30.599999964237213,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 26,
+          "mainSubmitMs": 0.09999996423721313,
+          "afterFrameMs": 31.100000023841858,
+          "verifiedMs": 31.30000001192093,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 6.5,
+          "mainSubmitMs": 0.09999996423721313,
+          "afterFrameMs": 32,
+          "verifiedMs": 32.10000002384186,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 8.199999988079071,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.19999998807907,
+          "verifiedMs": 31.30000001192093,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 6.400000035762787,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.69999998807907,
+          "verifiedMs": 31.900000035762787,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 8.199999988079071,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.299999952316284,
+          "verifiedMs": 31.399999976158142,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 18.19999998807907,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.099999964237213,
+          "verifiedMs": 31.30000001192093,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 5.199999988079071,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.40000003576279,
+          "verifiedMs": 32.40000003576279,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 7.100000023841858,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 30.19999998807907,
+          "verifiedMs": 30.30000001192093,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "mode": "bitmap",
+      "width": 1600,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 19944,
+          "type": "renderer"
+        },
+        {
+          "pid": 60808,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 62096,
+          "type": "browser"
+        },
+        {
+          "pid": 64900,
+          "type": "GPU"
+        }
+      ],
+      "memory": {
+        "count": 43,
+        "peakBytes": 197042176,
+        "initialBytes": 171872256,
+        "medianGapMs": 10.561599978245795,
+        "maxGapMs": 14.096600003540516,
+        "spanMs": 448.7568999757059
+      },
+      "samples": [
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 29,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 42.5,
+          "verifiedMs": 42.60000002384186,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 6.600000023841858,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.100000023841858,
+          "verifiedMs": 31.399999976158142,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 31,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 62.90000003576279,
+          "verifiedMs": 63.10000002384186,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 7.399999976158142,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.399999976158142,
+          "verifiedMs": 31.5,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 9.300000011920929,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31,
+          "verifiedMs": 31.099999964237213,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 8.200000047683716,
+          "mainSubmitMs": 0.10000002384185791,
+          "afterFrameMs": 30.100000023841858,
+          "verifiedMs": 30.30000001192093,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 8.800000011920929,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.30000001192093,
+          "verifiedMs": 32.39999997615814,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 24.30000001192093,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.5,
+          "verifiedMs": 31.69999998807907,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 7.800000011920929,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.30000001192093,
+          "verifiedMs": 31.399999976158142,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 8.199999988079071,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.30000001192093,
+          "verifiedMs": 32.40000003576279,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 18.19999998807907,
+          "mainSubmitMs": 0.10000002384185791,
+          "afterFrameMs": 31.099999964237213,
+          "verifiedMs": 31.399999976158142,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 6,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.30000001192093,
+          "verifiedMs": 31.5,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "mode": "baseline",
+      "width": 1600,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 16292,
+          "type": "GPU"
+        },
+        {
+          "pid": 63548,
+          "type": "renderer"
+        },
+        {
+          "pid": 63916,
+          "type": "browser"
+        },
+        {
+          "pid": 63928,
+          "type": "network.mojom.NetworkService"
+        }
+      ],
+      "memory": {
+        "count": 45,
+        "peakBytes": 266846208,
+        "initialBytes": 195616768,
+        "medianGapMs": 10.601049987599254,
+        "maxGapMs": 11.91659999312833,
+        "spanMs": 467.3454000148922
+      },
+      "samples": [
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 33.69999998807907,
+          "mainSubmitMs": 4.900000035762787,
+          "afterFrameMs": 40.59999996423721,
+          "verifiedMs": 40.799999952316284,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 11.699999988079071,
+          "mainSubmitMs": 1,
+          "afterFrameMs": 38.89999997615814,
+          "verifiedMs": 39.10000002384186,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 32.19999998807907,
+          "mainSubmitMs": 1.399999976158142,
+          "afterFrameMs": 47.59999996423721,
+          "verifiedMs": 47.80000001192093,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 10.5,
+          "mainSubmitMs": 2.5,
+          "afterFrameMs": 30.600000023841858,
+          "verifiedMs": 30.80000001192093,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 12.600000023841858,
+          "mainSubmitMs": 4.699999988079071,
+          "afterFrameMs": 33.90000003576279,
+          "verifiedMs": 34,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 7.899999976158142,
+          "mainSubmitMs": 2.600000023841858,
+          "afterFrameMs": 24.600000023841858,
+          "verifiedMs": 24.80000001192093,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 10,
+          "mainSubmitMs": 3.799999952316284,
+          "afterFrameMs": 30,
+          "verifiedMs": 30.100000023841858,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 21.899999976158142,
+          "mainSubmitMs": 0.8999999761581421,
+          "afterFrameMs": 28.19999998807907,
+          "verifiedMs": 28.30000001192093,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 10,
+          "mainSubmitMs": 2.800000011920929,
+          "afterFrameMs": 25.19999998807907,
+          "verifiedMs": 25.299999952316284,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 11.600000023841858,
+          "mainSubmitMs": 4.300000011920929,
+          "afterFrameMs": 29.900000035762787,
+          "verifiedMs": 30,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 24.69999998807907,
+          "mainSubmitMs": 1.300000011920929,
+          "afterFrameMs": 43.799999952316284,
+          "verifiedMs": 43.89999997615814,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 10.099999964237213,
+          "mainSubmitMs": 2.599999964237213,
+          "afterFrameMs": 30.80000001192093,
+          "verifiedMs": 31,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "mode": "bitmap",
+      "width": 900,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 31236,
+          "type": "browser"
+        },
+        {
+          "pid": 64500,
+          "type": "renderer"
+        },
+        {
+          "pid": 65160,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 66216,
+          "type": "GPU"
+        }
+      ],
+      "memory": {
+        "count": 40,
+        "peakBytes": 151437312,
+        "initialBytes": 143728640,
+        "medianGapMs": 10.646999988239259,
+        "maxGapMs": 11.96979999076575,
+        "spanMs": 419.6453000186011
+      },
+      "samples": [
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 35.39999997615814,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 39.59999996423721,
+          "verifiedMs": 39.80000001192093,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 4,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 29.299999952316284,
+          "verifiedMs": 29.399999976158142,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 27.400000035762787,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.600000023841858,
+          "verifiedMs": 31.700000047683716,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 5.300000011920929,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 30.900000035762787,
+          "verifiedMs": 31.100000023841858,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 5.800000011920929,
+          "mainSubmitMs": 0.09999996423721313,
+          "afterFrameMs": 31.600000023841858,
+          "verifiedMs": 31.900000035762787,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 4.399999976158142,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.399999976158142,
+          "verifiedMs": 31.600000023841858,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 5.600000023841858,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 30.100000023841858,
+          "verifiedMs": 30.30000001192093,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 28.600000023841858,
+          "mainSubmitMs": 0.10000002384185791,
+          "afterFrameMs": 32.30000001192093,
+          "verifiedMs": 32.40000003576279,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 5.900000035762787,
+          "mainSubmitMs": 0.10000002384185791,
+          "afterFrameMs": 21.5,
+          "verifiedMs": 21.600000023841858,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 4.800000011920929,
+          "mainSubmitMs": 0.09999996423721313,
+          "afterFrameMs": 30.600000023841858,
+          "verifiedMs": 30.80000001192093,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 30.19999998807907,
+          "mainSubmitMs": 0.10000002384185791,
+          "afterFrameMs": 33.299999952316284,
+          "verifiedMs": 33.39999997615814,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 4.200000047683716,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 28.600000023841858,
+          "verifiedMs": 28.700000047683716,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "mode": "baseline",
+      "width": 900,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 50796,
+          "type": "browser"
+        },
+        {
+          "pid": 52676,
+          "type": "renderer"
+        },
+        {
+          "pid": 63020,
+          "type": "GPU"
+        },
+        {
+          "pid": 65396,
+          "type": "network.mojom.NetworkService"
+        }
+      ],
+      "memory": {
+        "count": 40,
+        "peakBytes": 181915648,
+        "initialBytes": 153178112,
+        "medianGapMs": 10.613999969791621,
+        "maxGapMs": 11.507299961522222,
+        "spanMs": 415.04980000900105
+      },
+      "samples": [
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 21.30000001192093,
+          "mainSubmitMs": 1.199999988079071,
+          "afterFrameMs": 37.19999998807907,
+          "verifiedMs": 37.19999998807907,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 3.300000011920929,
+          "mainSubmitMs": 0.5,
+          "afterFrameMs": 29.600000023841858,
+          "verifiedMs": 29.80000001192093,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 18.599999964237213,
+          "mainSubmitMs": 0.30000001192092896,
+          "afterFrameMs": 32,
+          "verifiedMs": 32.09999996423721,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 5,
+          "mainSubmitMs": 1,
+          "afterFrameMs": 30.799999952316284,
+          "verifiedMs": 30.899999976158142,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 6.800000011920929,
+          "mainSubmitMs": 2.5,
+          "afterFrameMs": 30.600000023841858,
+          "verifiedMs": 30.80000001192093,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.600000023841858,
+          "mainSubmitMs": 0.9000000357627869,
+          "afterFrameMs": 31,
+          "verifiedMs": 31.100000023841858,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 5.199999988079071,
+          "mainSubmitMs": 1.800000011920929,
+          "afterFrameMs": 32.5,
+          "verifiedMs": 32.80000001192093,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 25.30000001192093,
+          "mainSubmitMs": 0.19999998807907104,
+          "afterFrameMs": 33.19999998807907,
+          "verifiedMs": 33.30000001192093,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 5.300000011920929,
+          "mainSubmitMs": 1.0999999642372131,
+          "afterFrameMs": 27.30000001192093,
+          "verifiedMs": 27.5,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 6,
+          "mainSubmitMs": 1.800000011920929,
+          "afterFrameMs": 31.099999964237213,
+          "verifiedMs": 31.19999998807907,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 24.30000001192093,
+          "mainSubmitMs": 0.30000001192092896,
+          "afterFrameMs": 31.80000001192093,
+          "verifiedMs": 32,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 5.099999964237213,
+          "mainSubmitMs": 0.8999999761581421,
+          "afterFrameMs": 26.19999998807907,
+          "verifiedMs": 26.299999952316284,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "mode": "baseline",
+      "width": 900,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 37780,
+          "type": "GPU"
+        },
+        {
+          "pid": 42652,
+          "type": "browser"
+        },
+        {
+          "pid": 56568,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 64692,
+          "type": "renderer"
+        }
+      ],
+      "memory": {
+        "count": 43,
+        "peakBytes": 157696000,
+        "initialBytes": 150482944,
+        "medianGapMs": 10.604949988191947,
+        "maxGapMs": 14.51990002533421,
+        "spanMs": 452.79030001256615
+      },
+      "samples": [
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 30.80000001192093,
+          "mainSubmitMs": 1.5,
+          "afterFrameMs": 40.200000047683716,
+          "verifiedMs": 40.30000001192093,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 5.899999976158142,
+          "mainSubmitMs": 2,
+          "afterFrameMs": 29.69999998807907,
+          "verifiedMs": 29.80000001192093,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 7.899999976158142,
+          "mainSubmitMs": 1.899999976158142,
+          "afterFrameMs": 32,
+          "verifiedMs": 32.19999998807907,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 5.5,
+          "mainSubmitMs": 1,
+          "afterFrameMs": 30.099999964237213,
+          "verifiedMs": 30.19999998807907,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 4.5,
+          "mainSubmitMs": 1.300000011920929,
+          "afterFrameMs": 31.5,
+          "verifiedMs": 31.600000023841858,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 22.100000023841858,
+          "mainSubmitMs": 0.20000004768371582,
+          "afterFrameMs": 29.69999998807907,
+          "verifiedMs": 29.899999976158142,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 4.300000011920929,
+          "mainSubmitMs": 0.699999988079071,
+          "afterFrameMs": 32.30000001192093,
+          "verifiedMs": 32.5,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 4.900000035762787,
+          "mainSubmitMs": 1.300000011920929,
+          "afterFrameMs": 31.400000035762787,
+          "verifiedMs": 31.5,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 19.80000001192093,
+          "mainSubmitMs": 0.3999999761581421,
+          "afterFrameMs": 30.700000047683716,
+          "verifiedMs": 30.900000035762787,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.600000023841858,
+          "mainSubmitMs": 0.800000011920929,
+          "afterFrameMs": 30.80000001192093,
+          "verifiedMs": 31,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 25.30000001192093,
+          "mainSubmitMs": 1.4000000357627869,
+          "afterFrameMs": 33.09999996423721,
+          "verifiedMs": 33.19999998807907,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 3.799999952316284,
+          "mainSubmitMs": 0.2999999523162842,
+          "afterFrameMs": 28.299999952316284,
+          "verifiedMs": 28.399999976158142,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "mode": "bitmap",
+      "width": 900,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 41900,
+          "type": "renderer"
+        },
+        {
+          "pid": 58348,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 60988,
+          "type": "GPU"
+        },
+        {
+          "pid": 62204,
+          "type": "browser"
+        }
+      ],
+      "memory": {
+        "count": 40,
+        "peakBytes": 150122496,
+        "initialBytes": 141168640,
+        "medianGapMs": 10.590300022158772,
+        "maxGapMs": 11.543000000528991,
+        "spanMs": 415.00390000874177
+      },
+      "samples": [
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 20.900000035762787,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 37.30000001192093,
+          "verifiedMs": 37.5,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 2.699999988079071,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.80000001192093,
+          "verifiedMs": 31.900000035762787,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 3.699999988079071,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.09999996423721,
+          "verifiedMs": 32.19999998807907,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 2.899999976158142,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 30.899999976158142,
+          "verifiedMs": 31,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 3.100000023841858,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.60000002384186,
+          "verifiedMs": 32.700000047683716,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 18,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.30000001192093,
+          "verifiedMs": 32.5,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 2.600000023841858,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.5,
+          "verifiedMs": 31.600000023841858,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 3.5,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.60000002384186,
+          "verifiedMs": 32.80000001192093,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 17.30000001192093,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 30.100000023841858,
+          "verifiedMs": 30.19999998807907,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 2.699999988079071,
+          "mainSubmitMs": 0.10000002384185791,
+          "afterFrameMs": 31.69999998807907,
+          "verifiedMs": 31.899999976158142,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 18.799999952316284,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 28.599999964237213,
+          "verifiedMs": 28.599999964237213,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 2.399999976158142,
+          "mainSubmitMs": 0.10000002384185791,
+          "afterFrameMs": 32.19999998807907,
+          "verifiedMs": 32.39999997615814,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "mode": "baseline",
+      "width": 1600,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 47560,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 52496,
+          "type": "renderer"
+        },
+        {
+          "pid": 63152,
+          "type": "browser"
+        },
+        {
+          "pid": 64128,
+          "type": "GPU"
+        }
+      ],
+      "memory": {
+        "count": 48,
+        "peakBytes": 258039808,
+        "initialBytes": 195145728,
+        "medianGapMs": 10.770499997306615,
+        "maxGapMs": 19.458800030406564,
+        "spanMs": 521.0731999832205
+      },
+      "samples": [
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 37.80000001192093,
+          "mainSubmitMs": 4.200000047683716,
+          "afterFrameMs": 45.69999998807907,
+          "verifiedMs": 45.89999997615814,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 11,
+          "mainSubmitMs": 2.700000047683716,
+          "afterFrameMs": 38.299999952316284,
+          "verifiedMs": 38.5,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 15.599999964237213,
+          "mainSubmitMs": 5,
+          "afterFrameMs": 32.80000001192093,
+          "verifiedMs": 32.89999997615814,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 10.800000011920929,
+          "mainSubmitMs": 2.800000011920929,
+          "afterFrameMs": 22,
+          "verifiedMs": 22.19999998807907,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 16.099999964237213,
+          "mainSubmitMs": 4.5,
+          "afterFrameMs": 24.799999952316284,
+          "verifiedMs": 24.799999952316284,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 35.19999998807907,
+          "mainSubmitMs": 1.0999999642372131,
+          "afterFrameMs": 42.19999998807907,
+          "verifiedMs": 42.30000001192093,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 14,
+          "mainSubmitMs": 2.400000035762787,
+          "afterFrameMs": 24,
+          "verifiedMs": 24.19999998807907,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 13.699999988079071,
+          "mainSubmitMs": 4.800000011920929,
+          "afterFrameMs": 28.100000023841858,
+          "verifiedMs": 28.600000023841858,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 33.90000003576279,
+          "mainSubmitMs": 1.100000023841858,
+          "afterFrameMs": 41.200000047683716,
+          "verifiedMs": 41.40000003576279,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 16.799999952316284,
+          "mainSubmitMs": 2.699999988079071,
+          "afterFrameMs": 39.89999997615814,
+          "verifiedMs": 40.09999996423721,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 36.89999997615814,
+          "mainSubmitMs": 4.300000011920929,
+          "afterFrameMs": 62.39999997615814,
+          "verifiedMs": 62.59999996423721,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 9.300000011920929,
+          "mainSubmitMs": 1.100000023841858,
+          "afterFrameMs": 27.600000023841858,
+          "verifiedMs": 27.80000001192093,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "mode": "bitmap",
+      "width": 1600,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 47480,
+          "type": "renderer"
+        },
+        {
+          "pid": 53688,
+          "type": "browser"
+        },
+        {
+          "pid": 63220,
+          "type": "GPU"
+        },
+        {
+          "pid": 68520,
+          "type": "network.mojom.NetworkService"
+        }
+      ],
+      "memory": {
+        "count": 40,
+        "peakBytes": 183443456,
+        "initialBytes": 167497728,
+        "medianGapMs": 10.612899961415678,
+        "maxGapMs": 12.24700000602752,
+        "spanMs": 416.0560000455007
+      },
+      "samples": [
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 28.799999952316284,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 39.799999952316284,
+          "verifiedMs": 39.89999997615814,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 9.300000011920929,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.599999964237213,
+          "verifiedMs": 31.69999998807907,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 9.599999964237213,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.599999964237213,
+          "verifiedMs": 31.799999952316284,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 6.300000011920929,
+          "mainSubmitMs": 0.09999996423721313,
+          "afterFrameMs": 31.200000047683716,
+          "verifiedMs": 31.400000035762787,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 7.600000023841858,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 30.80000001192093,
+          "verifiedMs": 31.100000023841858,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 21.099999964237213,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 34.19999998807907,
+          "verifiedMs": 34.39999997615814,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 5.800000011920929,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 29.19999998807907,
+          "verifiedMs": 29.400000035762787,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 7.5,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.69999998807907,
+          "verifiedMs": 31.80000001192093,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 20.80000001192093,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 34.30000001192093,
+          "verifiedMs": 34.5,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 6.100000023841858,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 28.900000035762787,
+          "verifiedMs": 28.900000035762787,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 29,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 34.19999998807907,
+          "verifiedMs": 34.39999997615814,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 5.800000011920929,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 30.099999964237213,
+          "verifiedMs": 30.19999998807907,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "mode": "bitmap",
+      "width": 1600,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 31208,
+          "type": "GPU"
+        },
+        {
+          "pid": 35960,
+          "type": "browser"
+        },
+        {
+          "pid": 55044,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 66444,
+          "type": "renderer"
+        }
+      ],
+      "memory": {
+        "count": 38,
+        "peakBytes": 197894144,
+        "initialBytes": 171515904,
+        "medianGapMs": 10.546799981966615,
+        "maxGapMs": 11.125499964691699,
+        "spanMs": 390.7576999627054
+      },
+      "samples": [
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 7.5,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 19.799999952316284,
+          "verifiedMs": 20,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 5.800000011920929,
+          "mainSubmitMs": 0.10000002384185791,
+          "afterFrameMs": 31.80000001192093,
+          "verifiedMs": 32,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 6.800000011920929,
+          "mainSubmitMs": 0.10000002384185791,
+          "afterFrameMs": 32.19999998807907,
+          "verifiedMs": 32.30000001192093,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 17.600000023841858,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.600000023841858,
+          "verifiedMs": 31.700000047683716,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 5.300000011920929,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.19999998807907,
+          "verifiedMs": 31.400000035762787,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 7.100000023841858,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 33.30000001192093,
+          "verifiedMs": 33.5,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 17.5,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 30.69999998807907,
+          "verifiedMs": 30.900000035762787,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 5.199999988079071,
+          "mainSubmitMs": 0.10000002384185791,
+          "afterFrameMs": 31.399999976158142,
+          "verifiedMs": 31.599999964237213,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 18.599999964237213,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.89999997615814,
+          "verifiedMs": 33,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 4.5,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32,
+          "verifiedMs": 32.19999998807907,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 17.400000035762787,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.80000001192093,
+          "verifiedMs": 32.10000002384186,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 5,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31,
+          "verifiedMs": 31.099999964237213,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "mode": "baseline",
+      "width": 1600,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 5808,
+          "type": "renderer"
+        },
+        {
+          "pid": 10888,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 63652,
+          "type": "GPU"
+        },
+        {
+          "pid": 65856,
+          "type": "browser"
+        }
+      ],
+      "memory": {
+        "count": 40,
+        "peakBytes": 250122240,
+        "initialBytes": 196268032,
+        "medianGapMs": 10.591699974611402,
+        "maxGapMs": 11.570399976335466,
+        "spanMs": 413.8556999969296
+      },
+      "samples": [
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 9.099999964237213,
+          "mainSubmitMs": 3.199999988079071,
+          "afterFrameMs": 20.19999998807907,
+          "verifiedMs": 20.399999976158142,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 9.699999988079071,
+          "mainSubmitMs": 2.699999988079071,
+          "afterFrameMs": 24.899999976158142,
+          "verifiedMs": 25,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 9.199999988079071,
+          "mainSubmitMs": 3.199999988079071,
+          "afterFrameMs": 30,
+          "verifiedMs": 30.19999998807907,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 19,
+          "mainSubmitMs": 0.8999999761581421,
+          "afterFrameMs": 29.5,
+          "verifiedMs": 29.5,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 7.199999988079071,
+          "mainSubmitMs": 1.9000000357627869,
+          "afterFrameMs": 29.899999976158142,
+          "verifiedMs": 30,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 9.300000011920929,
+          "mainSubmitMs": 3.899999976158142,
+          "afterFrameMs": 29.30000001192093,
+          "verifiedMs": 29.5,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 24.19999998807907,
+          "mainSubmitMs": 1.199999988079071,
+          "afterFrameMs": 29.599999964237213,
+          "verifiedMs": 29.69999998807907,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 8.099999964237213,
+          "mainSubmitMs": 2,
+          "afterFrameMs": 26.69999998807907,
+          "verifiedMs": 27,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 20.5,
+          "mainSubmitMs": 3.100000023841858,
+          "afterFrameMs": 47.59999996423721,
+          "verifiedMs": 47.799999952316284,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 5.5,
+          "mainSubmitMs": 0.7999999523162842,
+          "afterFrameMs": 27.700000047683716,
+          "verifiedMs": 27.80000001192093,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 1600,
+          "height": 2071,
+          "renderMs": 22.399999976158142,
+          "mainSubmitMs": 1,
+          "afterFrameMs": 31.899999976158142,
+          "verifiedMs": 32,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 1600,
+          "height": 1236,
+          "renderMs": 7.299999952316284,
+          "mainSubmitMs": 2.199999988079071,
+          "afterFrameMs": 31,
+          "verifiedMs": 31.099999964237213,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "mode": "bitmap",
+      "width": 900,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 29524,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 57012,
+          "type": "renderer"
+        },
+        {
+          "pid": 58064,
+          "type": "browser"
+        },
+        {
+          "pid": 58748,
+          "type": "GPU"
+        }
+      ],
+      "memory": {
+        "count": 43,
+        "peakBytes": 151916544,
+        "initialBytes": 142282752,
+        "medianGapMs": 10.681349987862632,
+        "maxGapMs": 11.572999996133149,
+        "spanMs": 450.90679998975247
+      },
+      "samples": [
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 4,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 7.5,
+          "verifiedMs": 7.600000023841858,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.100000023841858,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.5,
+          "verifiedMs": 31.600000023841858,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 4.399999976158142,
+          "mainSubmitMs": 0.09999996423721313,
+          "afterFrameMs": 32.80000001192093,
+          "verifiedMs": 32.89999997615814,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 20.30000001192093,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 27.400000035762787,
+          "verifiedMs": 27.400000035762787,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 7.399999976158142,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 32.69999998807907,
+          "verifiedMs": 32.80000001192093,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 4.700000047683716,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 29.80000001192093,
+          "verifiedMs": 29.900000035762787,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 30.5,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 58.59999996423721,
+          "verifiedMs": 58.69999998807907,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.400000035762787,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.69999998807907,
+          "verifiedMs": 31.900000035762787,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 29,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 30.30000001192093,
+          "verifiedMs": 30.5,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 9.699999988079071,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 24.69999998807907,
+          "verifiedMs": 24.899999976158142,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 29.200000047683716,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 57.5,
+          "verifiedMs": 57.60000002384186,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.700000047683716,
+          "mainSubmitMs": 0,
+          "afterFrameMs": 31.900000035762787,
+          "verifiedMs": 32,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "mode": "baseline",
+      "width": 900,
+      "clock": {
+        "clockStepMs": 0.09999996423721313,
+        "isolated": false
+      },
+      "processes": [
+        {
+          "pid": 63812,
+          "type": "network.mojom.NetworkService"
+        },
+        {
+          "pid": 63840,
+          "type": "GPU"
+        },
+        {
+          "pid": 64692,
+          "type": "browser"
+        },
+        {
+          "pid": 68324,
+          "type": "renderer"
+        }
+      ],
+      "memory": {
+        "count": 37,
+        "peakBytes": 187920384,
+        "initialBytes": 151384064,
+        "medianGapMs": 10.595900006592274,
+        "maxGapMs": 11.469500022940338,
+        "spanMs": 382.4177000205964
+      },
+      "samples": [
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 3.899999976158142,
+          "mainSubmitMs": 0.8999999761581421,
+          "afterFrameMs": 9.799999952316284,
+          "verifiedMs": 9.899999976158142,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.400000035762787,
+          "mainSubmitMs": 0.7000000476837158,
+          "afterFrameMs": 28.5,
+          "verifiedMs": 28.69999998807907,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 3.600000023841858,
+          "mainSubmitMs": 1,
+          "afterFrameMs": 32.60000002384186,
+          "verifiedMs": 32.69999998807907,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 14.800000011920929,
+          "mainSubmitMs": 0.6000000238418579,
+          "afterFrameMs": 31.399999976158142,
+          "verifiedMs": 31.5,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.099999964237213,
+          "mainSubmitMs": 0.5999999642372131,
+          "afterFrameMs": 31.799999952316284,
+          "verifiedMs": 31.899999976158142,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 3.399999976158142,
+          "mainSubmitMs": 1,
+          "afterFrameMs": 31,
+          "verifiedMs": 31.099999964237213,
+          "marker": [
+            16,
+            16,
+            61,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 14.5,
+          "mainSubmitMs": 0.30000001192092896,
+          "afterFrameMs": 31.19999998807907,
+          "verifiedMs": 31.399999976158142,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 8,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.199999988079071,
+          "mainSubmitMs": 0.800000011920929,
+          "afterFrameMs": 32,
+          "verifiedMs": 32.19999998807907,
+          "marker": [
+            16,
+            16,
+            121,
+            255
+          ]
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 15.899999976158142,
+          "mainSubmitMs": 1,
+          "afterFrameMs": 31.30000001192093,
+          "verifiedMs": 31.399999976158142,
+          "marker": [
+            16,
+            16,
+            31,
+            255
+          ]
+        },
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 2.100000023841858,
+          "mainSubmitMs": 0.19999998807907104,
+          "afterFrameMs": 32,
+          "verifiedMs": 32.10000002384186,
+          "marker": [
+            16,
+            16,
+            16,
+            255
+          ]
+        },
+        {
+          "page": 5,
+          "width": 900,
+          "height": 1165,
+          "renderMs": 14.099999964237213,
+          "mainSubmitMs": 0.5,
+          "afterFrameMs": 31.799999952316284,
+          "verifiedMs": 31.899999976158142,
+          "marker": [
+            16,
+            16,
+            76,
+            255
+          ]
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "renderMs": 3.199999988079071,
+          "mainSubmitMs": 0.5999999642372131,
+          "afterFrameMs": 31.19999998807907,
+          "verifiedMs": 31.30000001192093,
+          "marker": [
+            16,
+            16,
+            46,
+            255
+          ]
+        }
+      ]
+    }
+  ],
+  "equivalence": [
+    {
+      "mode": "baseline",
+      "page": 1,
+      "width": 900,
+      "height": 1165,
+      "sha256": "7efb5fcc8910ab20dede24ecc0d337ac500e1dd00069d7399c7f7961b25dea13",
+      "screenshotMarker": [
+        16,
+        16,
+        16,
+        255
+      ]
+    },
+    {
+      "mode": "baseline",
+      "page": 2,
+      "width": 900,
+      "height": 1165,
+      "sha256": "ad0f89a98b835d1ada03395e3b99efe6d89e31993c110b44445a09e23333cf25",
+      "screenshotMarker": [
+        16,
+        16,
+        31,
+        255
+      ]
+    },
+    {
+      "mode": "baseline",
+      "page": 3,
+      "width": 900,
+      "height": 695,
+      "sha256": "0fbdb644ef564e4649553d0f43cbf11b1e6ae36f93313e41c3f7c0b5c5cdb3f0",
+      "screenshotMarker": [
+        16,
+        16,
+        46,
+        255
+      ]
+    },
+    {
+      "mode": "baseline",
+      "page": 4,
+      "width": 900,
+      "height": 1165,
+      "sha256": "87c97dfdd0c1c43631893ce0666a832c01571b9776d8e16cddfd07fe7457750e",
+      "screenshotMarker": [
+        16,
+        16,
+        61,
+        255
+      ]
+    },
+    {
+      "mode": "baseline",
+      "page": 5,
+      "width": 900,
+      "height": 1165,
+      "sha256": "554eb179d18f191e8913ba599eaaefb8c88b0344165ff1501f12c74574155f87",
+      "screenshotMarker": [
+        16,
+        16,
+        76,
+        255
+      ]
+    },
+    {
+      "mode": "baseline",
+      "page": 8,
+      "width": 900,
+      "height": 695,
+      "sha256": "bd9e57f57c9613cc8177c9f973b7a3caaeec573b71e47b58a18c1623b99fbd4f",
+      "screenshotMarker": [
+        16,
+        16,
+        121,
+        255
+      ]
+    },
+    {
+      "mode": "bitmap",
+      "page": 1,
+      "width": 900,
+      "height": 1165,
+      "sha256": "7efb5fcc8910ab20dede24ecc0d337ac500e1dd00069d7399c7f7961b25dea13",
+      "screenshotMarker": [
+        16,
+        16,
+        16,
+        255
+      ]
+    },
+    {
+      "mode": "bitmap",
+      "page": 2,
+      "width": 900,
+      "height": 1165,
+      "sha256": "ad0f89a98b835d1ada03395e3b99efe6d89e31993c110b44445a09e23333cf25",
+      "screenshotMarker": [
+        16,
+        16,
+        31,
+        255
+      ]
+    },
+    {
+      "mode": "bitmap",
+      "page": 3,
+      "width": 900,
+      "height": 695,
+      "sha256": "0fbdb644ef564e4649553d0f43cbf11b1e6ae36f93313e41c3f7c0b5c5cdb3f0",
+      "screenshotMarker": [
+        16,
+        16,
+        46,
+        255
+      ]
+    },
+    {
+      "mode": "bitmap",
+      "page": 4,
+      "width": 900,
+      "height": 1165,
+      "sha256": "87c97dfdd0c1c43631893ce0666a832c01571b9776d8e16cddfd07fe7457750e",
+      "screenshotMarker": [
+        16,
+        16,
+        61,
+        255
+      ]
+    },
+    {
+      "mode": "bitmap",
+      "page": 5,
+      "width": 900,
+      "height": 1165,
+      "sha256": "554eb179d18f191e8913ba599eaaefb8c88b0344165ff1501f12c74574155f87",
+      "screenshotMarker": [
+        16,
+        16,
+        76,
+        255
+      ]
+    },
+    {
+      "mode": "bitmap",
+      "page": 8,
+      "width": 900,
+      "height": 695,
+      "sha256": "bd9e57f57c9613cc8177c9f973b7a3caaeec573b71e47b58a18c1623b99fbd4f",
+      "screenshotMarker": [
+        16,
+        16,
+        121,
+        255
+      ]
+    },
+    {
+      "mode": "baseline",
+      "page": 1,
+      "width": 1600,
+      "height": 2071,
+      "sha256": "ee7d9666a992d9fb62731aa8dadb8a9162d6c2bae82ddfbdb4cec3985f43973f",
+      "screenshotMarker": [
+        16,
+        16,
+        16,
+        255
+      ]
+    },
+    {
+      "mode": "baseline",
+      "page": 2,
+      "width": 1600,
+      "height": 2071,
+      "sha256": "2509ed0a21844bdaffe2483c80df16f4c65453f5224bdfd23823b697c860d76d",
+      "screenshotMarker": [
+        16,
+        16,
+        31,
+        255
+      ]
+    },
+    {
+      "mode": "baseline",
+      "page": 3,
+      "width": 1600,
+      "height": 1236,
+      "sha256": "c2603083cd918fcaf29dbc9d5db7ad6bb948bc0e13192ee08879810b58602dda",
+      "screenshotMarker": [
+        16,
+        16,
+        46,
+        255
+      ]
+    },
+    {
+      "mode": "baseline",
+      "page": 4,
+      "width": 1600,
+      "height": 2071,
+      "sha256": "fbc26164e446e2402d35b8f4a40d747c13df3e95e1bf9490b408dc82468c695c",
+      "screenshotMarker": [
+        16,
+        16,
+        61,
+        255
+      ]
+    },
+    {
+      "mode": "baseline",
+      "page": 5,
+      "width": 1600,
+      "height": 2071,
+      "sha256": "93d1f43fd8b3418a24f0046e4f7ba02a5fadaddb08b41257b944872ba4abe0ed",
+      "screenshotMarker": [
+        16,
+        16,
+        76,
+        255
+      ]
+    },
+    {
+      "mode": "baseline",
+      "page": 8,
+      "width": 1600,
+      "height": 1236,
+      "sha256": "0b397b541f453316d51f2e0d159f6709c5f4e5aea91d742ace1fc56c4da1196c",
+      "screenshotMarker": [
+        16,
+        16,
+        121,
+        255
+      ]
+    },
+    {
+      "mode": "bitmap",
+      "page": 1,
+      "width": 1600,
+      "height": 2071,
+      "sha256": "ee7d9666a992d9fb62731aa8dadb8a9162d6c2bae82ddfbdb4cec3985f43973f",
+      "screenshotMarker": [
+        16,
+        16,
+        16,
+        255
+      ]
+    },
+    {
+      "mode": "bitmap",
+      "page": 2,
+      "width": 1600,
+      "height": 2071,
+      "sha256": "2509ed0a21844bdaffe2483c80df16f4c65453f5224bdfd23823b697c860d76d",
+      "screenshotMarker": [
+        16,
+        16,
+        31,
+        255
+      ]
+    },
+    {
+      "mode": "bitmap",
+      "page": 3,
+      "width": 1600,
+      "height": 1236,
+      "sha256": "c2603083cd918fcaf29dbc9d5db7ad6bb948bc0e13192ee08879810b58602dda",
+      "screenshotMarker": [
+        16,
+        16,
+        46,
+        255
+      ]
+    },
+    {
+      "mode": "bitmap",
+      "page": 4,
+      "width": 1600,
+      "height": 2071,
+      "sha256": "fbc26164e446e2402d35b8f4a40d747c13df3e95e1bf9490b408dc82468c695c",
+      "screenshotMarker": [
+        16,
+        16,
+        61,
+        255
+      ]
+    },
+    {
+      "mode": "bitmap",
+      "page": 5,
+      "width": 1600,
+      "height": 2071,
+      "sha256": "93d1f43fd8b3418a24f0046e4f7ba02a5fadaddb08b41257b944872ba4abe0ed",
+      "screenshotMarker": [
+        16,
+        16,
+        76,
+        255
+      ]
+    },
+    {
+      "mode": "bitmap",
+      "page": 8,
+      "width": 1600,
+      "height": 1236,
+      "sha256": "0b397b541f453316d51f2e0d159f6709c5f4e5aea91d742ace1fc56c4da1196c",
+      "screenshotMarker": [
+        16,
+        16,
+        121,
+        255
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "width": 900,
+      "mode": "baseline",
+      "renderMs": {
+        "n": 72,
+        "median": 5.75,
+        "p95": 30.80000001192093,
+        "max": 33.60000002384186
+      },
+      "afterFrameMs": {
+        "n": 72,
+        "median": 31.19999998807907,
+        "p95": 40.200000047683716,
+        "max": 47.19999998807907
+      },
+      "verifiedMs": {
+        "n": 72,
+        "median": 31.349999994039536,
+        "p95": 40.30000001192093,
+        "max": 47.39999997615814
+      },
+      "mainSubmitMs": {
+        "n": 72,
+        "median": 0.9000000357627869,
+        "p95": 2,
+        "max": 2.5
+      },
+      "peakMiB": {
+        "n": 6,
+        "median": 168.283203125,
+        "p95": 179.21484375,
+        "max": 179.21484375
+      }
+    },
+    {
+      "width": 900,
+      "mode": "bitmap",
+      "renderMs": {
+        "n": 72,
+        "median": 5.299999982118607,
+        "p95": 30.900000035762787,
+        "max": 35.39999997615814
+      },
+      "afterFrameMs": {
+        "n": 72,
+        "median": 31.5,
+        "p95": 57.5,
+        "max": 63.80000001192093
+      },
+      "verifiedMs": {
+        "n": 72,
+        "median": 31.600000023841858,
+        "p95": 57.60000002384186,
+        "max": 63.90000003576279
+      },
+      "mainSubmitMs": {
+        "n": 72,
+        "median": 0,
+        "p95": 0.10000002384185791,
+        "max": 0.10000002384185791
+      },
+      "peakMiB": {
+        "n": 6,
+        "median": 143.833984375,
+        "p95": 148.24609375,
+        "max": 148.24609375
+      }
+    },
+    {
+      "width": 1600,
+      "mode": "baseline",
+      "renderMs": {
+        "n": 72,
+        "median": 12.400000005960464,
+        "p95": 36.09999996423721,
+        "max": 37.80000001192093
+      },
+      "afterFrameMs": {
+        "n": 72,
+        "median": 30.799999982118607,
+        "p95": 48.799999952316284,
+        "max": 65.30000001192093
+      },
+      "verifiedMs": {
+        "n": 72,
+        "median": 30.94999998807907,
+        "p95": 49,
+        "max": 65.39999997615814
+      },
+      "mainSubmitMs": {
+        "n": 72,
+        "median": 2.599999964237213,
+        "p95": 5,
+        "max": 5.5
+      },
+      "peakMiB": {
+        "n": 6,
+        "median": 251.77734375,
+        "p95": 254.484375,
+        "max": 254.484375
+      }
+    },
+    {
+      "width": 1600,
+      "mode": "bitmap",
+      "renderMs": {
+        "n": 72,
+        "median": 8.200000017881393,
+        "p95": 29,
+        "max": 35.5
+      },
+      "afterFrameMs": {
+        "n": 72,
+        "median": 31.5,
+        "p95": 42.5,
+        "max": 64.60000002384186
+      },
+      "verifiedMs": {
+        "n": 72,
+        "median": 31.649999976158142,
+        "p95": 42.60000002384186,
+        "max": 64.80000001192093
+      },
+      "mainSubmitMs": {
+        "n": 72,
+        "median": 0,
+        "p95": 0.10000002384185791,
+        "max": 0.10000002384185791
+      },
+      "peakMiB": {
+        "n": 6,
+        "median": 187.501953125,
+        "p95": 188.7265625,
+        "max": 188.7265625
+      }
+    }
+  ]
+}
