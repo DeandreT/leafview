@@ -1,5 +1,6 @@
 // Cache compiled code across packet opens; each worker still gets private memory.
 let compiled;
+export const preload = () => loadCode();
 function loadCode() {
   return compiled ??= (async () => {
     const response = await fetch(new URL("./pkg/folio_wasm.wasm", import.meta.url));
@@ -37,7 +38,7 @@ export async function openDocument(url) {
   worker.onmessage = ({ data }) => {
     if (data.fatal) return stop(new Error(`Hayro: ${data.fatal}`));
     const request = pending.get(data.id);
-    if (!request) return;
+    if (!request) { data.bitmap?.close(); return; }
     clearTimeout(request.timer);
     pending.delete(data.id);
     if (data.error) request.reject(new Error(data.error));
@@ -65,7 +66,8 @@ export async function openDocument(url) {
   const { pageCount } = await opened;
   return {
     pageCount,
-    async render(pageOneBased, width, canvas) {
+    async render(pageOneBased, width, canvas, signal) {
+      signal?.throwIfAborted();
       if (stopped) throw stopped;
       if (!Number.isInteger(pageOneBased) || pageOneBased < 1 || pageOneBased > pageCount) {
         throw new RangeError(`Page must be an integer from 1 to ${pageCount}`);
@@ -73,13 +75,33 @@ export async function openDocument(url) {
       if (!Number.isInteger(width) || width < 1 || width > 8192) {
         throw new RangeError("Width must be an integer from 1 to 8192 pixels");
       }
-      const ctx = canvas?.getContext?.("2d");
-      if (!ctx) throw new Error("Render target must be a canvas with a 2D context");
-      const { pixels, height } = await rpc({ type: "render", page: pageOneBased, width });
-      if (stopped) throw stopped;
-      canvas.width = width;
-      canvas.height = height;
-      ctx.putImageData(new ImageData(new Uint8ClampedArray(pixels), width, height), 0, 0);
+      const wantsBitmap = width >= 1600 && typeof OffscreenCanvas !== "undefined" &&
+        typeof ImageBitmapRenderingContext !== "undefined";
+      const { pixels, height, bitmap } = await rpc({ type: "render", page: pageOneBased, width, bitmap: wantsBitmap });
+      try {
+        signal?.throwIfAborted();
+        if (stopped) throw stopped;
+        canvas.width = width;
+        canvas.height = height;
+        // A canvas can already own a 2D context when reused by the caller.
+        if (bitmap) {
+          const presenter = canvas.getContext("bitmaprenderer");
+          if (presenter) presenter.transferFromImageBitmap(bitmap);
+          else canvas.getContext("2d").drawImage(bitmap, 0, 0);
+        } else {
+          const image = new ImageData(new Uint8ClampedArray(pixels), width, height);
+          const ctx = canvas.getContext("2d");
+          if (ctx) ctx.putImageData(image, 0, 0);
+          else {
+            const converted = await createImageBitmap(image);
+            try {
+              signal?.throwIfAborted();
+              if (stopped) throw stopped;
+              canvas.getContext("bitmaprenderer").transferFromImageBitmap(converted);
+            } finally { converted.close(); }
+          }
+        }
+      } finally { bitmap?.close(); }
     },
     destroy() {
       stop(new Error("Document destroyed"));

@@ -43,10 +43,13 @@ Both engines used selected-page-first rendering, visible-only thumbnails, and at
 
 ## Reproduce or try it
 
-With Bun, Rust/rustup, and Python 3.12 in a virtual environment:
+See [renderer delivery](docs/renderer-delivery.md) for the complete static package and notices. With Bun, Rust/rustup, and Python 3.12 in a virtual environment:
 
 ```sh
 bun install --frozen-lockfile
+rustup target add wasm32-unknown-unknown
+rustup component add rust-docs
+cargo fetch --locked
 bun scripts/build-wasm.mjs
 python -m pip install --only-binary=:all: reportlab==4.4.3 pillow==11.3.0
 python bench/generate.py
