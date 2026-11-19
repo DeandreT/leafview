@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Folio PDF preview benchmark</title>
+<style>
+  * { box-sizing: border-box }
+  body { margin: 0; font: 16px system-ui, sans-serif; color: #294e64 }
+  #picker { padding: 2rem }
+  #packet:not([hidden]) { display: grid; grid-template-columns: min(42vw,420px) 1fr; height: 100vh }
+  #sidebar, #main-preview { min-width: 0; overflow: auto }
+  #sidebar { padding: 18px }
+  #pages { display: flex; flex-wrap: wrap; gap: 12px }
+  .thumbnail { flex: none; width: 115px; border: 2px solid transparent; border-radius: 6px; padding: 5px;
+    background: #f1f4f7; color: inherit; text-align: left; cursor: pointer }
+  .thumbnail[aria-pressed=true] { border-color: #1683b0 }
+  .image { display: grid; place-items: center; height: 135px; overflow: hidden; background: white }
+  .caption, .source { display: block; margin-top: 6px; font-size: .64rem }
+  canvas { display: block; max-width: 100%; height: auto }
+  #main-preview { padding: 14px; background: #eef2f5 }
+  #close { position: fixed; top: 4px; right: 16px }
+  #error:not(:empty) { position: fixed; bottom: 0; background: #fff; color: #91261a; padding: 1em }
+</style>
+<section id="picker">
+  <h1>Folio PDF preview</h1>
+  <p>Engine: <b id="mode"></b>. Switch to <a href="?engine=pdfjs">PDF.js</a> or <a href="?engine=wasm">Rust WASM</a>.</p>
+  <button data-open="p25">Open 25 pages</button> <button data-open="p250">Open 250 pages</button>
+</section>
+<section id="packet" hidden>
+  <nav id="sidebar" aria-label="Packet pages"><div id="pages"></div></nav>
+  <main id="main-preview" aria-label="Selected page"></main>
+  <button id="close">Close packet</button>
+</section>
+<output id="error"></output>
+<script type="module" src="./host.js"></script>
+</html>

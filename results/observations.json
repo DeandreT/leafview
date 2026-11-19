@@ -1,0 +1,2387 @@
+{
+  "generatedAt": "2026-11-19T19:20:59.783Z",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "deviceScaleFactor": 1,
+  "rounds": 6,
+  "burstsPerRound": 6,
+  "cacheLimit": 2,
+  "mainWidth": 900,
+  "thumbnailWidth": 160,
+  "gapMs": 25,
+  "platform": "win32",
+  "arch": "x64",
+  "osRelease": "10.0.26300",
+  "cpu": "AMD Ryzen 7 PRO 8840U w/ Radeon 780M Graphics  ",
+  "machineMemoryBytes": 32928129024,
+  "bun": "1.4.5",
+  "chromium": "158.0.8127.18",
+  "pdfjs": "5.4.624",
+  "playwright": "1.65.0",
+  "fixtures": [
+    {
+      "id": "p25",
+      "bytes": 423298,
+      "sha256": "1e42ad4b883eed894ec3dac031efe1d55a538be0bda77ec6b8141b8bd6729b2e"
+    },
+    {
+      "id": "p250",
+      "bytes": 662637,
+      "sha256": "cf8e2edebcaa41b1c0c67780120a96719fe7cb7cb04339fb9126d76b2270c4cc"
+    },
+    {
+      "id": "m1",
+      "bytes": 423356,
+      "sha256": "048ae8c228372a007c82dcd5daa19c0cb136e394efae0ad85ab33384aa7cb910"
+    },
+    {
+      "id": "m2",
+      "bytes": 423348,
+      "sha256": "35da04331d6f22af239e87d37d3877e21f719b5308559a385d04f6954529432f"
+    },
+    {
+      "id": "m3",
+      "bytes": 423339,
+      "sha256": "4704bd9b696a4e96f71257673fd24110a65a051af637b0d9228a787481cc5587"
+    },
+    {
+      "id": "m4",
+      "bytes": 423379,
+      "sha256": "2fe66c63f4a48033a98afcbfed95abcdd72810f5ddb95d0e84bbdd9e2fb0bd22"
+    },
+    {
+      "id": "m5",
+      "bytes": 423324,
+      "sha256": "9a41bd6f6a53b25a76f783ad65756044ed9f7972218283eceb4b972661d7d937"
+    },
+    {
+      "id": "m6",
+      "bytes": 423362,
+      "sha256": "0ae6bb8e4b20dbc77c8856edf9d22ba778ac5e494478cc503c1e79edb7a49eca"
+    },
+    {
+      "id": "m7",
+      "bytes": 423360,
+      "sha256": "24a0d447d8e3f0bb91979d22d8892d92e2a0fdd2f89e9c2235a4743f5b7eaf7a"
+    },
+    {
+      "id": "m8",
+      "bytes": 423359,
+      "sha256": "20c38e97462b94b5223074ea430a77d67930359c88627592a4bda441e75839b5"
+    },
+    {
+      "id": "m9",
+      "bytes": 423357,
+      "sha256": "18b647d62b946334dad9feef2c99794218cfef26f2a779d2f027ffc4c737c7a1"
+    },
+    {
+      "id": "m10",
+      "bytes": 423395,
+      "sha256": "dbb48317484d8c83772045763c94570b845e0aa7673bd08dfaa9a2d14d9e2cb5"
+    }
+  ],
+  "sizes": {
+    "pdfjs": {
+      "files": [
+        {
+          "path": "/pdfjs-engine.js",
+          "rawBytes": 854,
+          "gzipBytes": 439,
+          "sha256": "63882a55a38f4466539b9fdc7f28a27730344dcc130a9143c7cad4256e127495"
+        },
+        {
+          "path": "/pdfjs/build/pdf.min.mjs",
+          "rawBytes": 424135,
+          "gzipBytes": 120037,
+          "sha256": "5f1177175790dcf5b5b0a888205f132bea690c35194e4613099d421a16423d0b"
+        },
+        {
+          "path": "/pdfjs/build/pdf.worker.min.mjs",
+          "rawBytes": 1078612,
+          "gzipBytes": 297218,
+          "sha256": "f499515a0dc93d97787d693a75218a439675719283f56812067c036dcae1f8d5"
+        }
+      ],
+      "rawBytes": 1503601,
+      "gzipBytes": 417694
+    },
+    "wasm": {
+      "files": [
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "rawBytes": 5225302,
+          "gzipBytes": 1896215,
+          "sha256": "b3d13e15ca72880f9bab310775f57fb5b9d0ac1aeceac558b6706bdb84849b87"
+        },
+        {
+          "path": "/wasm-engine.js",
+          "rawBytes": 2718,
+          "gzipBytes": 1103,
+          "sha256": "dabb28405987f027c247fe49b6a13870a5e77ff516dd551b356f73344f99ea47"
+        },
+        {
+          "path": "/wasm-worker.js",
+          "rawBytes": 2810,
+          "gzipBytes": 1265,
+          "sha256": "4b98363b08f8783cd3da2a7bdfd10393eb3a981ab89dfe4764be65265b9c66b5"
+        }
+      ],
+      "rawBytes": 5230830,
+      "gzipBytes": 1898583
+    }
+  },
+  "opens": [
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 0,
+      "state": "cold",
+      "mainMs": 156.30000001192093,
+      "firstThumbnailMs": 189.5
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 0,
+      "state": "warm",
+      "mainMs": 29.099999964237213,
+      "firstThumbnailMs": 62.69999998807907
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 0,
+      "state": "cold",
+      "mainMs": 106.10000002384186,
+      "firstThumbnailMs": 123.10000002384186
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 0,
+      "state": "warm",
+      "mainMs": 13.600000023841858,
+      "firstThumbnailMs": 30
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 0,
+      "state": "cold",
+      "mainMs": 221.80000001192093,
+      "firstThumbnailMs": 253
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 0,
+      "state": "warm",
+      "mainMs": 30.5,
+      "firstThumbnailMs": 62.89999997615814
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 0,
+      "state": "cold",
+      "mainMs": 137.89999997615814,
+      "firstThumbnailMs": 154.5999999642372
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 0,
+      "state": "warm",
+      "mainMs": 13.699999988079071,
+      "firstThumbnailMs": 30.799999952316284
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 1,
+      "state": "cold",
+      "mainMs": 89.69999998807907,
+      "firstThumbnailMs": 106.69999998807907
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 1,
+      "state": "warm",
+      "mainMs": 13.099999964237213,
+      "firstThumbnailMs": 30.099999964237213
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 1,
+      "state": "cold",
+      "mainMs": 138.60000002384186,
+      "firstThumbnailMs": 159.80000001192093
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 1,
+      "state": "warm",
+      "mainMs": 26.899999976158142,
+      "firstThumbnailMs": 60.60000002384186
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 1,
+      "state": "cold",
+      "mainMs": 86,
+      "firstThumbnailMs": 103.10000002384186
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 1,
+      "state": "warm",
+      "mainMs": 13.199999988079071,
+      "firstThumbnailMs": 30.19999998807907
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 1,
+      "state": "cold",
+      "mainMs": 167.19999998807907,
+      "firstThumbnailMs": 200.30000001192093
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 1,
+      "state": "warm",
+      "mainMs": 29.100000023841858,
+      "firstThumbnailMs": 62.69999998807907
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 2,
+      "state": "cold",
+      "mainMs": 129.80000001192093,
+      "firstThumbnailMs": 162.4000000357628
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 2,
+      "state": "warm",
+      "mainMs": 28.80000001192093,
+      "firstThumbnailMs": 61.90000003576279
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 2,
+      "state": "cold",
+      "mainMs": 89.20000004768372,
+      "firstThumbnailMs": 106.60000002384186
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 2,
+      "state": "warm",
+      "mainMs": 13.800000011920929,
+      "firstThumbnailMs": 30
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 2,
+      "state": "cold",
+      "mainMs": 149.70000004768372,
+      "firstThumbnailMs": 183.60000002384186
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 2,
+      "state": "warm",
+      "mainMs": 29.900000035762787,
+      "firstThumbnailMs": 63.60000002384186
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 2,
+      "state": "cold",
+      "mainMs": 90.80000001192093,
+      "firstThumbnailMs": 106.19999998807907
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 2,
+      "state": "warm",
+      "mainMs": 13.699999988079071,
+      "firstThumbnailMs": 30.900000035762787
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 3,
+      "state": "cold",
+      "mainMs": 84.30000001192093,
+      "firstThumbnailMs": 101.10000002384186
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 3,
+      "state": "warm",
+      "mainMs": 13.900000035762787,
+      "firstThumbnailMs": 30.69999998807907
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 3,
+      "state": "cold",
+      "mainMs": 135.89999997615814,
+      "firstThumbnailMs": 162.5
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 3,
+      "state": "warm",
+      "mainMs": 30.100000023841858,
+      "firstThumbnailMs": 63.10000002384186
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 3,
+      "state": "cold",
+      "mainMs": 86.09999996423721,
+      "firstThumbnailMs": 103.09999996423721
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 3,
+      "state": "warm",
+      "mainMs": 15.699999988079071,
+      "firstThumbnailMs": 32.09999996423721
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 3,
+      "state": "cold",
+      "mainMs": 152,
+      "firstThumbnailMs": 178.4000000357628
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 3,
+      "state": "warm",
+      "mainMs": 30.69999998807907,
+      "firstThumbnailMs": 63.5
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 4,
+      "state": "cold",
+      "mainMs": 151.89999997615814,
+      "firstThumbnailMs": 177.79999995231628
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 4,
+      "state": "warm",
+      "mainMs": 31.400000035762787,
+      "firstThumbnailMs": 65.60000002384186
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 4,
+      "state": "cold",
+      "mainMs": 71.69999998807907,
+      "firstThumbnailMs": 87.69999998807907
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 4,
+      "state": "warm",
+      "mainMs": 16,
+      "firstThumbnailMs": 31.19999998807907
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 4,
+      "state": "cold",
+      "mainMs": 151.0999999642372,
+      "firstThumbnailMs": 176.69999998807907
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 4,
+      "state": "warm",
+      "mainMs": 30.19999998807907,
+      "firstThumbnailMs": 63.19999998807907
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 4,
+      "state": "cold",
+      "mainMs": 87.69999998807907,
+      "firstThumbnailMs": 104
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 4,
+      "state": "warm",
+      "mainMs": 14.199999988079071,
+      "firstThumbnailMs": 30.900000035762787
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 5,
+      "state": "cold",
+      "mainMs": 92.39999997615814,
+      "firstThumbnailMs": 110.30000001192093
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 5,
+      "state": "warm",
+      "mainMs": 12.899999976158142,
+      "firstThumbnailMs": 30.19999998807907
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 5,
+      "state": "cold",
+      "mainMs": 155,
+      "firstThumbnailMs": 176.5
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 5,
+      "state": "warm",
+      "mainMs": 28.299999952316284,
+      "firstThumbnailMs": 61.89999997615814
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 5,
+      "state": "cold",
+      "mainMs": 86.40000003576279,
+      "firstThumbnailMs": 103
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 5,
+      "state": "warm",
+      "mainMs": 16.399999976158142,
+      "firstThumbnailMs": 31.100000023841858
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 5,
+      "state": "cold",
+      "mainMs": 116.69999998807907,
+      "firstThumbnailMs": 144.30000001192093
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 5,
+      "state": "warm",
+      "mainMs": 30.30000001192093,
+      "firstThumbnailMs": 63.90000003576279
+    }
+  ],
+  "bursts": [
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 0,
+      "burst": 0,
+      "end": 2,
+      "clickMs": 40.59999996423721,
+      "precedingClicksMs": 81.80000001192093,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 0,
+      "burst": 1,
+      "end": 15,
+      "clickMs": 42.89999997615814,
+      "precedingClicksMs": 77.10000002384186,
+      "thumbnailsCompletedAtClick": 2,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 0,
+      "burst": 2,
+      "end": 4,
+      "clickMs": 42.19999998807907,
+      "precedingClicksMs": 80.90000003576279,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 0,
+      "burst": 3,
+      "end": 17,
+      "clickMs": 45.40000003576279,
+      "precedingClicksMs": 80.19999998807907,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 0,
+      "burst": 4,
+      "end": 6,
+      "clickMs": 45.09999996423721,
+      "precedingClicksMs": 80,
+      "thumbnailsCompletedAtClick": 5,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 0,
+      "burst": 5,
+      "end": 19,
+      "clickMs": 40.39999997615814,
+      "precedingClicksMs": 79.5,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 0,
+      "burst": 0,
+      "end": 2,
+      "clickMs": 67.39999997615814,
+      "precedingClicksMs": 77.89999997615814,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 0,
+      "burst": 1,
+      "end": 15,
+      "clickMs": 50.89999997615814,
+      "precedingClicksMs": 78,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 0,
+      "burst": 2,
+      "end": 4,
+      "clickMs": 9.599999964237213,
+      "precedingClicksMs": 83.70000004768372,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 0,
+      "burst": 3,
+      "end": 17,
+      "clickMs": 34.30000001192093,
+      "precedingClicksMs": 78.89999997615814,
+      "thumbnailsCompletedAtClick": 5,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 0,
+      "burst": 4,
+      "end": 6,
+      "clickMs": 36,
+      "precedingClicksMs": 76.5,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 0,
+      "burst": 5,
+      "end": 19,
+      "clickMs": 48.5,
+      "precedingClicksMs": 77.89999997615814,
+      "thumbnailsCompletedAtClick": 7,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 0,
+      "burst": 0,
+      "end": 2,
+      "clickMs": 50.19999998807907,
+      "precedingClicksMs": 86.70000004768372,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 0,
+      "burst": 1,
+      "end": 15,
+      "clickMs": 41.09999996423721,
+      "precedingClicksMs": 76.80000001192093,
+      "thumbnailsCompletedAtClick": 2,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 0,
+      "burst": 2,
+      "end": 28,
+      "clickMs": 44.60000002384186,
+      "precedingClicksMs": 77.19999998807907,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 0,
+      "burst": 3,
+      "end": 41,
+      "clickMs": 40.80000001192093,
+      "precedingClicksMs": 86.39999997615814,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 0,
+      "burst": 4,
+      "end": 54,
+      "clickMs": 40.39999997615814,
+      "precedingClicksMs": 81.10000002384186,
+      "thumbnailsCompletedAtClick": 5,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 0,
+      "burst": 5,
+      "end": 67,
+      "clickMs": 44.80000001192093,
+      "precedingClicksMs": 95,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 0,
+      "burst": 0,
+      "end": 2,
+      "clickMs": 34.40000003576279,
+      "precedingClicksMs": 78.19999998807907,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 0,
+      "burst": 1,
+      "end": 15,
+      "clickMs": 48.69999998807907,
+      "precedingClicksMs": 80.10000002384186,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 0,
+      "burst": 2,
+      "end": 28,
+      "clickMs": 17.400000035762787,
+      "precedingClicksMs": 77.59999996423721,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 0,
+      "burst": 3,
+      "end": 41,
+      "clickMs": 17.600000023841858,
+      "precedingClicksMs": 77.79999995231628,
+      "thumbnailsCompletedAtClick": 9,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 0,
+      "burst": 4,
+      "end": 54,
+      "clickMs": 8.399999976158142,
+      "precedingClicksMs": 104.30000001192093,
+      "thumbnailsCompletedAtClick": 11,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 0,
+      "burst": 5,
+      "end": 67,
+      "clickMs": 35,
+      "precedingClicksMs": 78.80000001192093,
+      "thumbnailsCompletedAtClick": 13,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 1,
+      "burst": 0,
+      "end": 33,
+      "clickMs": 16.30000001192093,
+      "precedingClicksMs": 77.69999998807907,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 1,
+      "burst": 1,
+      "end": 46,
+      "clickMs": 18.69999998807907,
+      "precedingClicksMs": 79,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 1,
+      "burst": 2,
+      "end": 59,
+      "clickMs": 21.400000035762787,
+      "precedingClicksMs": 77.59999996423721,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 1,
+      "burst": 3,
+      "end": 72,
+      "clickMs": 33.5,
+      "precedingClicksMs": 78.89999997615814,
+      "thumbnailsCompletedAtClick": 7,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 1,
+      "burst": 4,
+      "end": 85,
+      "clickMs": 34.5,
+      "precedingClicksMs": 77.60000002384186,
+      "thumbnailsCompletedAtClick": 9,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 1,
+      "burst": 5,
+      "end": 98,
+      "clickMs": 17.599999964237213,
+      "precedingClicksMs": 78.10000002384186,
+      "thumbnailsCompletedAtClick": 11,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 1,
+      "burst": 0,
+      "end": 33,
+      "clickMs": 40.69999998807907,
+      "precedingClicksMs": 78.89999997615814,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 1,
+      "burst": 1,
+      "end": 46,
+      "clickMs": 41.39999997615814,
+      "precedingClicksMs": 81.30000001192093,
+      "thumbnailsCompletedAtClick": 2,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 1,
+      "burst": 2,
+      "end": 59,
+      "clickMs": 42.09999996423721,
+      "precedingClicksMs": 93.20000004768372,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 1,
+      "burst": 3,
+      "end": 72,
+      "clickMs": 45.799999952316284,
+      "precedingClicksMs": 81,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 1,
+      "burst": 4,
+      "end": 85,
+      "clickMs": 41,
+      "precedingClicksMs": 81.90000003576279,
+      "thumbnailsCompletedAtClick": 5,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 1,
+      "burst": 5,
+      "end": 98,
+      "clickMs": 45.09999996423721,
+      "precedingClicksMs": 80.80000001192093,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 1,
+      "burst": 0,
+      "end": 9,
+      "clickMs": 34.10000002384186,
+      "precedingClicksMs": 78.5,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 1,
+      "burst": 1,
+      "end": 22,
+      "clickMs": 35.69999998807907,
+      "precedingClicksMs": 77.70000004768372,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 1,
+      "burst": 2,
+      "end": 11,
+      "clickMs": 21.100000023841858,
+      "precedingClicksMs": 77,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 1,
+      "burst": 3,
+      "end": 24,
+      "clickMs": 33.59999996423721,
+      "precedingClicksMs": 78.60000002384186,
+      "thumbnailsCompletedAtClick": 7,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 1,
+      "burst": 4,
+      "end": 13,
+      "clickMs": 19.900000035762787,
+      "precedingClicksMs": 76.30000001192093,
+      "thumbnailsCompletedAtClick": 9,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 1,
+      "burst": 5,
+      "end": 2,
+      "clickMs": 51.90000003576279,
+      "precedingClicksMs": 78,
+      "thumbnailsCompletedAtClick": 11,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 1,
+      "burst": 0,
+      "end": 9,
+      "clickMs": 33.80000001192093,
+      "precedingClicksMs": 88.5,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 1,
+      "burst": 1,
+      "end": 22,
+      "clickMs": 38.69999998807907,
+      "precedingClicksMs": 83.39999997615814,
+      "thumbnailsCompletedAtClick": 2,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 1,
+      "burst": 2,
+      "end": 11,
+      "clickMs": 43.700000047683716,
+      "precedingClicksMs": 79.79999995231628,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 1,
+      "burst": 3,
+      "end": 24,
+      "clickMs": 32.89999997615814,
+      "precedingClicksMs": 77.80000001192093,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 1,
+      "burst": 4,
+      "end": 13,
+      "clickMs": 43.69999998807907,
+      "precedingClicksMs": 78.80000001192093,
+      "thumbnailsCompletedAtClick": 5,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 1,
+      "burst": 5,
+      "end": 2,
+      "clickMs": 45.69999998807907,
+      "precedingClicksMs": 82.5,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 2,
+      "burst": 0,
+      "end": 16,
+      "clickMs": 41.5,
+      "precedingClicksMs": 78.89999997615814,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 2,
+      "burst": 1,
+      "end": 5,
+      "clickMs": 33.69999998807907,
+      "precedingClicksMs": 88.90000003576279,
+      "thumbnailsCompletedAtClick": 2,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 2,
+      "burst": 2,
+      "end": 18,
+      "clickMs": 42.10000002384186,
+      "precedingClicksMs": 79.39999997615814,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 2,
+      "burst": 3,
+      "end": 7,
+      "clickMs": 33.60000002384186,
+      "precedingClicksMs": 77.89999997615814,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 2,
+      "burst": 4,
+      "end": 20,
+      "clickMs": 44,
+      "precedingClicksMs": 78.19999998807907,
+      "thumbnailsCompletedAtClick": 5,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 2,
+      "burst": 5,
+      "end": 9,
+      "clickMs": 41.89999997615814,
+      "precedingClicksMs": 85.90000003576279,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 2,
+      "burst": 0,
+      "end": 16,
+      "clickMs": 16.80000001192093,
+      "precedingClicksMs": 78.19999998807907,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 2,
+      "burst": 1,
+      "end": 5,
+      "clickMs": 35.299999952316284,
+      "precedingClicksMs": 77.60000002384186,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 2,
+      "burst": 2,
+      "end": 18,
+      "clickMs": 30.80000001192093,
+      "precedingClicksMs": 78.30000001192093,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 2,
+      "burst": 3,
+      "end": 7,
+      "clickMs": 34.10000002384186,
+      "precedingClicksMs": 78.5,
+      "thumbnailsCompletedAtClick": 8,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 2,
+      "burst": 4,
+      "end": 20,
+      "clickMs": 34.39999997615814,
+      "precedingClicksMs": 77.19999998807907,
+      "thumbnailsCompletedAtClick": 11,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 2,
+      "burst": 5,
+      "end": 9,
+      "clickMs": 34.89999997615814,
+      "precedingClicksMs": 78.69999998807907,
+      "thumbnailsCompletedAtClick": 13,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 2,
+      "burst": 0,
+      "end": 64,
+      "clickMs": 34.700000047683716,
+      "precedingClicksMs": 85.19999998807907,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 2,
+      "burst": 1,
+      "end": 77,
+      "clickMs": 32.90000003576279,
+      "precedingClicksMs": 88.39999997615814,
+      "thumbnailsCompletedAtClick": 2,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 2,
+      "burst": 2,
+      "end": 90,
+      "clickMs": 44.80000001192093,
+      "precedingClicksMs": 77.89999997615814,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 2,
+      "burst": 3,
+      "end": 103,
+      "clickMs": 34.799999952316284,
+      "precedingClicksMs": 77.20000004768372,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 2,
+      "burst": 4,
+      "end": 116,
+      "clickMs": 43.40000003576279,
+      "precedingClicksMs": 80.79999995231628,
+      "thumbnailsCompletedAtClick": 5,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 2,
+      "burst": 5,
+      "end": 129,
+      "clickMs": 40,
+      "precedingClicksMs": 86.89999997615814,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 2,
+      "burst": 0,
+      "end": 64,
+      "clickMs": 35,
+      "precedingClicksMs": 77.69999998807907,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 2,
+      "burst": 1,
+      "end": 77,
+      "clickMs": 48,
+      "precedingClicksMs": 80.5,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 2,
+      "burst": 2,
+      "end": 90,
+      "clickMs": 34.5,
+      "precedingClicksMs": 77.59999996423721,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 2,
+      "burst": 3,
+      "end": 103,
+      "clickMs": 29.80000001192093,
+      "precedingClicksMs": 80,
+      "thumbnailsCompletedAtClick": 9,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 2,
+      "burst": 4,
+      "end": 116,
+      "clickMs": 19.30000001192093,
+      "precedingClicksMs": 76.30000001192093,
+      "thumbnailsCompletedAtClick": 11,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 2,
+      "burst": 5,
+      "end": 129,
+      "clickMs": 15.399999976158142,
+      "precedingClicksMs": 79,
+      "thumbnailsCompletedAtClick": 13,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 3,
+      "burst": 0,
+      "end": 95,
+      "clickMs": 35,
+      "precedingClicksMs": 77.80000001192093,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 3,
+      "burst": 1,
+      "end": 108,
+      "clickMs": 17.69999998807907,
+      "precedingClicksMs": 78.90000003576279,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 3,
+      "burst": 2,
+      "end": 121,
+      "clickMs": 21.700000047683716,
+      "precedingClicksMs": 77.69999998807907,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 3,
+      "burst": 3,
+      "end": 134,
+      "clickMs": 19.400000035762787,
+      "precedingClicksMs": 78.29999995231628,
+      "thumbnailsCompletedAtClick": 7,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 3,
+      "burst": 4,
+      "end": 147,
+      "clickMs": 33.60000002384186,
+      "precedingClicksMs": 78.10000002384186,
+      "thumbnailsCompletedAtClick": 9,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 3,
+      "burst": 5,
+      "end": 160,
+      "clickMs": 35.69999998807907,
+      "precedingClicksMs": 77.30000001192093,
+      "thumbnailsCompletedAtClick": 11,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 3,
+      "burst": 0,
+      "end": 95,
+      "clickMs": 36.19999998807907,
+      "precedingClicksMs": 82,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 3,
+      "burst": 1,
+      "end": 108,
+      "clickMs": 43.90000003576279,
+      "precedingClicksMs": 77.59999996423721,
+      "thumbnailsCompletedAtClick": 2,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 3,
+      "burst": 2,
+      "end": 121,
+      "clickMs": 47.39999997615814,
+      "precedingClicksMs": 80.10000002384186,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 3,
+      "burst": 3,
+      "end": 134,
+      "clickMs": 43.19999998807907,
+      "precedingClicksMs": 83,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 3,
+      "burst": 4,
+      "end": 147,
+      "clickMs": 45.89999997615814,
+      "precedingClicksMs": 93.90000003576279,
+      "thumbnailsCompletedAtClick": 5,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 3,
+      "burst": 5,
+      "end": 160,
+      "clickMs": 44.69999998807907,
+      "precedingClicksMs": 80.89999997615814,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 3,
+      "burst": 0,
+      "end": 23,
+      "clickMs": 16.80000001192093,
+      "precedingClicksMs": 78.5,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 3,
+      "burst": 1,
+      "end": 12,
+      "clickMs": 34.5,
+      "precedingClicksMs": 77.80000001192093,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 3,
+      "burst": 2,
+      "end": 25,
+      "clickMs": 45.59999996423721,
+      "precedingClicksMs": 78.90000003576279,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 3,
+      "burst": 3,
+      "end": 14,
+      "clickMs": 17.80000001192093,
+      "precedingClicksMs": 78,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 3,
+      "burst": 4,
+      "end": 3,
+      "clickMs": 22.900000035762787,
+      "precedingClicksMs": 89.09999996423721,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 3,
+      "burst": 5,
+      "end": 16,
+      "clickMs": 36.80000001192093,
+      "precedingClicksMs": 77.09999996423721,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 3,
+      "burst": 0,
+      "end": 23,
+      "clickMs": 40.60000002384186,
+      "precedingClicksMs": 80.5,
+      "thumbnailsCompletedAtClick": 2,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 3,
+      "burst": 1,
+      "end": 12,
+      "clickMs": 41.89999997615814,
+      "precedingClicksMs": 81.80000001192093,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 3,
+      "burst": 2,
+      "end": 25,
+      "clickMs": 43.5,
+      "precedingClicksMs": 82.10000002384186,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 3,
+      "burst": 3,
+      "end": 14,
+      "clickMs": 40.09999996423721,
+      "precedingClicksMs": 83,
+      "thumbnailsCompletedAtClick": 5,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 3,
+      "burst": 4,
+      "end": 3,
+      "clickMs": 45.60000002384186,
+      "precedingClicksMs": 80,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 3,
+      "burst": 5,
+      "end": 16,
+      "clickMs": 36.5,
+      "precedingClicksMs": 77.19999998807907,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 4,
+      "burst": 0,
+      "end": 6,
+      "clickMs": 42.5,
+      "precedingClicksMs": 78.5,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 4,
+      "burst": 1,
+      "end": 19,
+      "clickMs": 42.80000001192093,
+      "precedingClicksMs": 82,
+      "thumbnailsCompletedAtClick": 2,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 4,
+      "burst": 2,
+      "end": 8,
+      "clickMs": 43.80000001192093,
+      "precedingClicksMs": 79.59999996423721,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 4,
+      "burst": 3,
+      "end": 21,
+      "clickMs": 41.80000001192093,
+      "precedingClicksMs": 87.5,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 4,
+      "burst": 4,
+      "end": 10,
+      "clickMs": 45.80000001192093,
+      "precedingClicksMs": 79.5,
+      "thumbnailsCompletedAtClick": 5,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 4,
+      "burst": 5,
+      "end": 23,
+      "clickMs": 35.89999997615814,
+      "precedingClicksMs": 76,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 4,
+      "burst": 0,
+      "end": 6,
+      "clickMs": 19.399999976158142,
+      "precedingClicksMs": 77.40000003576279,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 4,
+      "burst": 1,
+      "end": 19,
+      "clickMs": 34.40000003576279,
+      "precedingClicksMs": 78,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 4,
+      "burst": 2,
+      "end": 8,
+      "clickMs": 18.5,
+      "precedingClicksMs": 78.19999998807907,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 4,
+      "burst": 3,
+      "end": 21,
+      "clickMs": 19.899999976158142,
+      "precedingClicksMs": 77.19999998807907,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 4,
+      "burst": 4,
+      "end": 10,
+      "clickMs": 33.799999952316284,
+      "precedingClicksMs": 78.60000002384186,
+      "thumbnailsCompletedAtClick": 8,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 4,
+      "burst": 5,
+      "end": 23,
+      "clickMs": 16.5,
+      "precedingClicksMs": 76.5,
+      "thumbnailsCompletedAtClick": 9,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 4,
+      "burst": 0,
+      "end": 126,
+      "clickMs": 42.40000003576279,
+      "precedingClicksMs": 79.29999995231628,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 4,
+      "burst": 1,
+      "end": 139,
+      "clickMs": 41,
+      "precedingClicksMs": 81.80000001192093,
+      "thumbnailsCompletedAtClick": 2,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 4,
+      "burst": 2,
+      "end": 152,
+      "clickMs": 35.80000001192093,
+      "precedingClicksMs": 87,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 4,
+      "burst": 3,
+      "end": 165,
+      "clickMs": 41.19999998807907,
+      "precedingClicksMs": 78.60000002384186,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 4,
+      "burst": 4,
+      "end": 178,
+      "clickMs": 41.80000001192093,
+      "precedingClicksMs": 81.19999998807907,
+      "thumbnailsCompletedAtClick": 5,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 4,
+      "burst": 5,
+      "end": 191,
+      "clickMs": 34.700000047683716,
+      "precedingClicksMs": 77.69999998807907,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 4,
+      "burst": 0,
+      "end": 126,
+      "clickMs": 33.80000001192093,
+      "precedingClicksMs": 78.10000002384186,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 4,
+      "burst": 1,
+      "end": 139,
+      "clickMs": 33.80000001192093,
+      "precedingClicksMs": 77,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 4,
+      "burst": 2,
+      "end": 152,
+      "clickMs": 45.30000001192093,
+      "precedingClicksMs": 78.19999998807907,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 4,
+      "burst": 3,
+      "end": 165,
+      "clickMs": 34.59999996423721,
+      "precedingClicksMs": 77.70000004768372,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 4,
+      "burst": 4,
+      "end": 178,
+      "clickMs": 17.30000001192093,
+      "precedingClicksMs": 78.69999998807907,
+      "thumbnailsCompletedAtClick": 8,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 4,
+      "burst": 5,
+      "end": 191,
+      "clickMs": 16.899999976158142,
+      "precedingClicksMs": 79,
+      "thumbnailsCompletedAtClick": 9,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 5,
+      "burst": 0,
+      "end": 157,
+      "clickMs": 34.19999998807907,
+      "precedingClicksMs": 76.80000001192093,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 5,
+      "burst": 1,
+      "end": 170,
+      "clickMs": 36.40000003576279,
+      "precedingClicksMs": 76.09999996423721,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 5,
+      "burst": 2,
+      "end": 183,
+      "clickMs": 19.80000001192093,
+      "precedingClicksMs": 76.09999996423721,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 5,
+      "burst": 3,
+      "end": 196,
+      "clickMs": 19.400000035762787,
+      "precedingClicksMs": 78.09999996423721,
+      "thumbnailsCompletedAtClick": 8,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 5,
+      "burst": 4,
+      "end": 209,
+      "clickMs": 19.30000001192093,
+      "precedingClicksMs": 77.5,
+      "thumbnailsCompletedAtClick": 9,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 250,
+      "round": 5,
+      "burst": 5,
+      "end": 222,
+      "clickMs": 48,
+      "precedingClicksMs": 78.70000004768372,
+      "thumbnailsCompletedAtClick": 11,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 5,
+      "burst": 0,
+      "end": 157,
+      "clickMs": 39.700000047683716,
+      "precedingClicksMs": 81.79999995231628,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 5,
+      "burst": 1,
+      "end": 170,
+      "clickMs": 43.30000001192093,
+      "precedingClicksMs": 80.39999997615814,
+      "thumbnailsCompletedAtClick": 2,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 5,
+      "burst": 2,
+      "end": 183,
+      "clickMs": 42.30000001192093,
+      "precedingClicksMs": 81.19999998807907,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 5,
+      "burst": 3,
+      "end": 196,
+      "clickMs": 33.200000047683716,
+      "precedingClicksMs": 78,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 5,
+      "burst": 4,
+      "end": 209,
+      "clickMs": 41.39999997615814,
+      "precedingClicksMs": 83.19999998807907,
+      "thumbnailsCompletedAtClick": 5,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 250,
+      "round": 5,
+      "burst": 5,
+      "end": 222,
+      "clickMs": 33.69999998807907,
+      "precedingClicksMs": 77,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 5,
+      "burst": 0,
+      "end": 13,
+      "clickMs": 18.399999976158142,
+      "precedingClicksMs": 76.80000001192093,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 5,
+      "burst": 1,
+      "end": 2,
+      "clickMs": 35.80000001192093,
+      "precedingClicksMs": 78.69999998807907,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 5,
+      "burst": 2,
+      "end": 15,
+      "clickMs": 42.69999998807907,
+      "precedingClicksMs": 85.19999998807907,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 5,
+      "burst": 3,
+      "end": 4,
+      "clickMs": 36,
+      "precedingClicksMs": 77.19999998807907,
+      "thumbnailsCompletedAtClick": 6,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 5,
+      "burst": 4,
+      "end": 17,
+      "clickMs": 34.80000001192093,
+      "precedingClicksMs": 78.10000002384186,
+      "thumbnailsCompletedAtClick": 8,
+      "correct": true
+    },
+    {
+      "engine": "wasm",
+      "n": 25,
+      "round": 5,
+      "burst": 5,
+      "end": 6,
+      "clickMs": 18.30000001192093,
+      "precedingClicksMs": 78.40000003576279,
+      "thumbnailsCompletedAtClick": 9,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 5,
+      "burst": 0,
+      "end": 13,
+      "clickMs": 43.39999997615814,
+      "precedingClicksMs": 76.30000001192093,
+      "thumbnailsCompletedAtClick": 1,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 5,
+      "burst": 1,
+      "end": 2,
+      "clickMs": 41.200000047683716,
+      "precedingClicksMs": 82.5,
+      "thumbnailsCompletedAtClick": 2,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 5,
+      "burst": 2,
+      "end": 15,
+      "clickMs": 35.700000047683716,
+      "precedingClicksMs": 77.39999997615814,
+      "thumbnailsCompletedAtClick": 2,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 5,
+      "burst": 3,
+      "end": 4,
+      "clickMs": 32.39999997615814,
+      "precedingClicksMs": 80.10000002384186,
+      "thumbnailsCompletedAtClick": 3,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 5,
+      "burst": 4,
+      "end": 17,
+      "clickMs": 33.89999997615814,
+      "precedingClicksMs": 78.19999998807907,
+      "thumbnailsCompletedAtClick": 4,
+      "correct": true
+    },
+    {
+      "engine": "pdfjs",
+      "n": 25,
+      "round": 5,
+      "burst": 5,
+      "end": 6,
+      "clickMs": 44.10000002384186,
+      "precedingClicksMs": 81.59999996423721,
+      "thumbnailsCompletedAtClick": 5,
+      "correct": true
+    }
+  ],
+  "memory": [
+    {
+      "engine": "pdfjs",
+      "packets": 0,
+      "cacheEntries": 0,
+      "keys": [],
+      "workers": 0,
+      "mainJsHeapBytes": 1171404,
+      "mainBackingStorageBytes": 5351,
+      "privateBytes": 80941056
+    },
+    {
+      "engine": "pdfjs",
+      "packets": 1,
+      "cacheEntries": 1,
+      "keys": [
+        "/fixtures/m1.pdf"
+      ],
+      "workers": 1,
+      "mainJsHeapBytes": 2514292,
+      "mainBackingStorageBytes": 448186,
+      "privateBytes": 129605632
+    },
+    {
+      "engine": "pdfjs",
+      "packets": 2,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m1.pdf",
+        "/fixtures/m2.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 2868176,
+      "mainBackingStorageBytes": 465568,
+      "privateBytes": 158793728
+    },
+    {
+      "engine": "pdfjs",
+      "packets": 3,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m2.pdf",
+        "/fixtures/m3.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 2921228,
+      "mainBackingStorageBytes": 465606,
+      "privateBytes": 164392960
+    },
+    {
+      "engine": "pdfjs",
+      "packets": 4,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m3.pdf",
+        "/fixtures/m4.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 2932100,
+      "mainBackingStorageBytes": 465644,
+      "privateBytes": 167043072
+    },
+    {
+      "engine": "pdfjs",
+      "packets": 5,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m4.pdf",
+        "/fixtures/m5.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 2957132,
+      "mainBackingStorageBytes": 465682,
+      "privateBytes": 169480192
+    },
+    {
+      "engine": "pdfjs",
+      "packets": 6,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m5.pdf",
+        "/fixtures/m6.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 2962952,
+      "mainBackingStorageBytes": 465720,
+      "privateBytes": 171257856
+    },
+    {
+      "engine": "pdfjs",
+      "packets": 7,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m6.pdf",
+        "/fixtures/m7.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 2978456,
+      "mainBackingStorageBytes": 465758,
+      "privateBytes": 173424640
+    },
+    {
+      "engine": "pdfjs",
+      "packets": 8,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m7.pdf",
+        "/fixtures/m8.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 2985644,
+      "mainBackingStorageBytes": 465796,
+      "privateBytes": 174936064
+    },
+    {
+      "engine": "pdfjs",
+      "packets": 9,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m8.pdf",
+        "/fixtures/m9.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 3075204,
+      "mainBackingStorageBytes": 465834,
+      "privateBytes": 174288896
+    },
+    {
+      "engine": "pdfjs",
+      "packets": 10,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m9.pdf",
+        "/fixtures/m10.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 3081420,
+      "mainBackingStorageBytes": 465874,
+      "privateBytes": 178978816
+    },
+    {
+      "engine": "wasm",
+      "packets": 0,
+      "cacheEntries": 0,
+      "keys": [],
+      "workers": 0,
+      "mainJsHeapBytes": 1171404,
+      "mainBackingStorageBytes": 5350,
+      "privateBytes": 83996672
+    },
+    {
+      "engine": "wasm",
+      "packets": 1,
+      "cacheEntries": 1,
+      "keys": [
+        "/fixtures/m1.pdf"
+      ],
+      "workers": 1,
+      "mainJsHeapBytes": 1287536,
+      "mainBackingStorageBytes": 8218,
+      "privateBytes": 143495168
+    },
+    {
+      "engine": "wasm",
+      "packets": 2,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m1.pdf",
+        "/fixtures/m2.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 1289564,
+      "mainBackingStorageBytes": 8234,
+      "privateBytes": 177860608
+    },
+    {
+      "engine": "wasm",
+      "packets": 3,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m2.pdf",
+        "/fixtures/m3.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 1297624,
+      "mainBackingStorageBytes": 8234,
+      "privateBytes": 181211136
+    },
+    {
+      "engine": "wasm",
+      "packets": 4,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m3.pdf",
+        "/fixtures/m4.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 1298248,
+      "mainBackingStorageBytes": 8234,
+      "privateBytes": 182636544
+    },
+    {
+      "engine": "wasm",
+      "packets": 5,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m4.pdf",
+        "/fixtures/m5.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 1302660,
+      "mainBackingStorageBytes": 8234,
+      "privateBytes": 181932032
+    },
+    {
+      "engine": "wasm",
+      "packets": 6,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m5.pdf",
+        "/fixtures/m6.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 1302632,
+      "mainBackingStorageBytes": 8234,
+      "privateBytes": 183291904
+    },
+    {
+      "engine": "wasm",
+      "packets": 7,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m6.pdf",
+        "/fixtures/m7.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 1302928,
+      "mainBackingStorageBytes": 8234,
+      "privateBytes": 183947264
+    },
+    {
+      "engine": "wasm",
+      "packets": 8,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m7.pdf",
+        "/fixtures/m8.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 1302928,
+      "mainBackingStorageBytes": 8234,
+      "privateBytes": 183902208
+    },
+    {
+      "engine": "wasm",
+      "packets": 9,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m8.pdf",
+        "/fixtures/m9.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 1305568,
+      "mainBackingStorageBytes": 8234,
+      "privateBytes": 185794560
+    },
+    {
+      "engine": "wasm",
+      "packets": 10,
+      "cacheEntries": 2,
+      "keys": [
+        "/fixtures/m9.pdf",
+        "/fixtures/m10.pdf"
+      ],
+      "workers": 2,
+      "mainJsHeapBytes": 1305784,
+      "mainBackingStorageBytes": 8235,
+      "privateBytes": 189616128
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "pageCount": 250,
+  "perResponseMbit": 10,
+  "requestDelayMs": 40,
+  "gzipLevel": 9,
+  "samples": [
+    {
+      "engine": "pdfjs",
+      "round": 0,
+      "ms": 1025
+    },
+    {
+      "engine": "wasm",
+      "round": 0,
+      "ms": 1722.4000000357628
+    },
+    {
+      "engine": "wasm",
+      "round": 1,
+      "ms": 1703.4000000357628
+    },
+    {
+      "engine": "pdfjs",
+      "round": 1,
+      "ms": 1016.1999999880791
+    },
+    {
+      "engine": "pdfjs",
+      "round": 2,
+      "ms": 1007.8000000119209
+    },
+    {
+      "engine": "wasm",
+      "round": 2,
+      "ms": 1717.2000000476837
+    },
+    {
+      "engine": "wasm",
+      "round": 3,
+      "ms": 1707
+    },
+    {
+      "engine": "pdfjs",
+      "round": 3,
+      "ms": 991.5999999642372
+    },
+    {
+      "engine": "pdfjs",
+      "round": 4,
+      "ms": 1024.6000000238419
+    },
+    {
+      "engine": "wasm",
+      "round": 4,
+      "ms": 1751.5
+    },
+    {
+      "engine": "wasm",
+      "round": 5,
+      "ms": 1717
+    },
+    {
+      "engine": "pdfjs",
+      "round": 5,
+      "ms": 1051.6000000238419
+    }
+  ]
+}

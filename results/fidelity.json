@@ -1,0 +1,87 @@
+[
+  {
+    "page": 1,
+    "sizes": [
+      [
+        900,
+        1164
+      ],
+      [
+        900,
+        1165
+      ]
+    ],
+    "dimensions": true,
+    "marks": true,
+    "opaque": true,
+    "tileInkOverlap": 0.9451112940411533
+  },
+  {
+    "page": 2,
+    "sizes": [
+      [
+        900,
+        1164
+      ],
+      [
+        900,
+        1165
+      ]
+    ],
+    "dimensions": true,
+    "marks": true,
+    "opaque": true,
+    "tileInkOverlap": 0.9650907021532111
+  },
+  {
+    "page": 3,
+    "sizes": [
+      [
+        900,
+        695
+      ],
+      [
+        900,
+        695
+      ]
+    ],
+    "dimensions": true,
+    "marks": true,
+    "opaque": true,
+    "tileInkOverlap": 0.9394484852234163
+  },
+  {
+    "page": 24,
+    "sizes": [
+      [
+        900,
+        1164
+      ],
+      [
+        900,
+        1165
+      ]
+    ],
+    "dimensions": true,
+    "marks": true,
+    "opaque": true,
+    "tileInkOverlap": 0.9422691122870693
+  },
+  {
+    "page": 25,
+    "sizes": [
+      [
+        900,
+        1164
+      ],
+      [
+        900,
+        1165
+      ]
+    ],
+    "dimensions": true,
+    "marks": true,
+    "opaque": true,
+    "tileInkOverlap": 0.9647665750432717
+  }
+]
