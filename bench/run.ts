@@ -15,7 +15,8 @@ const viewport = { width: 1440, height: 900 };
 const engines = ["pdfjs", "wasm"] as const;
 type Engine = typeof engines[number];
 const smoke = process.argv[2] === "--smoke";
-const paced = process.argv[2] === "--paced";
+const preload = process.argv[2] === "--preload";
+const paced = process.argv[2] === "--paced" || preload;
 type Codec = "gzip" | "br";
 let codec: Codec = "gzip";
 const wireCache = new Map<string, Record<Codec, Buffer>>();
@@ -36,6 +37,11 @@ function preparePacedAssets() {
     const variants = renderer ? { br: readFileSync(`${delivery}.br`), gzip: readFileSync(`${delivery}.gz`) } : encode(raw);
     if (renderer && (!brotliDecompressSync(variants.br).equals(raw) || !gunzipSync(variants.gzip).equals(raw))) {
       throw Error(`Stale delivery sidecars: ${path}. Run scripts/precompress.mjs.`);
+    }
+    // Only the preload experiment exposes the existing memoized compile promise.
+    // Both arms receive exactly the same instrumented adapter.
+    if (preload && path === "wasm-engine.js") {
+      Object.assign(variants, encode(Buffer.concat([raw,Buffer.from("\nexport { loadCode as warmRenderer };\n")])));
     }
     wireCache.set(file, variants);
     return { path: `/${path}`, sha256: sha(raw), rawBytes: raw.length, gzipBytes: variants.gzip.length, brBytes: variants.br.length };
@@ -247,6 +253,42 @@ try {
   if (process.argv[2] === "--serve") {
     console.log(`Preview host: ${server.url}`);
     await new Promise(() => {});
+  } else if (preload) {
+    preparePacedAssets();
+    codec = "br";
+    const browser = await chromium.launch();
+    try {
+      const samples = [];
+      for (let r=0; r<rounds; r++) {
+        for (const dwell of r%2 ? [-1,1500,500,0] : [0,500,1500,-1]) {
+          for (const early of r%2 ? [true,false] : [false,true]) {
+            const {p,ctx} = await app(browser,"wasm");
+            try {
+              transfers = [];
+              const t = await p.evaluate(async ({dwell,early}) => {
+                const start = performance.now();
+                const ready = early ? import("/wasm-engine.js").then(m=>m.warmRenderer()) : Promise.resolve();
+                if (dwell < 0) { await ready; return {start, click:0}; }
+                if (dwell) await new Promise(resolve => setTimeout(resolve,dwell));
+                const click = performance.now();
+                (window as any).bench.open("p250");
+                return {start,click};
+              },{dwell,early});
+              const shown = dwell >= 0 ? await paint(p,t.click,"p250") : undefined;
+              if (shown) await settled(p,250);
+              const urls = transfers.map(x=>x.path);
+              if (urls.filter(x=>x.endsWith(".wasm")).length !== Number(early || !!shown)) throw Error("Unexpected module transfers");
+              if (urls.some(x=>x.includes("fixtures/")) !== !!shown) throw Error("Unexpected PDF transfer");
+              samples.push({round:r+1,dwellMs:dwell,early,clickMs:shown?.ms??null,listMs:shown?t.click-t.start+shown.ms:null,
+                markerVerified:!!shown, transfers:[...transfers]});
+            } finally { await ctx.close(); }
+          }
+        }
+        console.log(`Preload round ${r+1}/${rounds}`);
+      }
+      writeFileSync(`${root}/results/preload-study.json`,JSON.stringify({rounds,chromium:browser.version(),
+        note:"Fresh context, list already interactive, no HTTP cache, Brotli, 10 Mbit/s per response, 40 ms/request. -1 measures no-open after preload finishes.",samples},null,2)+"\n");
+    } finally { await browser.close(); }
   } else if (paced) {
     const files = preparePacedAssets();
     const b = await chromium.launch();
