@@ -1,0 +1,1861 @@
+{
+  "generatedAt": "2026-11-19T20:32:47.051Z",
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: x86_64-pc-windows-msvc\nrelease: 1.99.1\nLLVM version: 23.1.1",
+  "cargo": "cargo 1.99.1 (5f94df478 2026-08-27)",
+  "cargoLock": "07c98f277eb107be0e55e76ba44c863dea1ea704826b9f7c12aa1d2dce298dcc",
+  "variants": {
+    "current": {
+      "sha256": "a17961649ab20bba89cc55f0f449c9a69441df70bfeed96661e3977d19817a45",
+      "rawBytes": 4574693,
+      "brBytes": 1427029,
+      "sections": {
+        "type": 862,
+        "function": 2781,
+        "table": 9,
+        "memory": 7,
+        "global": 11,
+        "export": 77,
+        "element": 1317,
+        "code": 3397621,
+        "data": 1172000
+      }
+    },
+    "default": {
+      "sha256": "a17961649ab20bba89cc55f0f449c9a69441df70bfeed96661e3977d19817a45",
+      "rawBytes": 4574693,
+      "brBytes": 1427029,
+      "sections": {
+        "type": 862,
+        "function": 2781,
+        "table": 9,
+        "memory": 7,
+        "global": 11,
+        "export": 77,
+        "element": 1317,
+        "code": 3397621,
+        "data": 1172000
+      }
+    },
+    "fonts": {
+      "sha256": "e3955bc4ef5ce11aec767966ecf3ee7327ce589fbfad4827dd20dc90f1c5d6c0",
+      "rawBytes": 4093886,
+      "brBytes": 1116434,
+      "sections": {
+        "type": 850,
+        "function": 2731,
+        "table": 9,
+        "memory": 7,
+        "global": 11,
+        "export": 77,
+        "element": 1311,
+        "code": 3303126,
+        "data": 785756
+      }
+    },
+    "cmaps": {
+      "sha256": "35a7a90a11e8fb30cdd416205eb6b09b33bf3b4c93f280a584218d4afb1be7a1",
+      "rawBytes": 4308868,
+      "brBytes": 1211198,
+      "sections": {
+        "type": 862,
+        "function": 2780,
+        "table": 9,
+        "memory": 7,
+        "global": 11,
+        "export": 77,
+        "element": 1316,
+        "code": 3396734,
+        "data": 907064
+      }
+    },
+    "neither": {
+      "sha256": "39a56c9c50ad0b10256a0d2bc741a02ff90277ee6b402b9f3e438cd04c75ee14",
+      "rawBytes": 3828060,
+      "brBytes": 901245,
+      "sections": {
+        "type": 850,
+        "function": 2730,
+        "table": 9,
+        "memory": 7,
+        "global": 11,
+        "export": 77,
+        "element": 1309,
+        "code": 3302239,
+        "data": 520820
+      }
+    },
+    "lazy": {
+      "sha256": "81df3c5386cc1a61c267308a716c97ff8ea0fc43e375acc1c8d6315dc4da4b17",
+      "rawBytes": 3917509,
+      "brBytes": 946661,
+      "sections": {
+        "type": 862,
+        "import": 22,
+        "function": 2762,
+        "table": 9,
+        "memory": 7,
+        "global": 11,
+        "export": 77,
+        "element": 1319,
+        "code": 3342568,
+        "data": 569864
+      }
+    }
+  },
+  "assets": [
+    {
+      "name": "cmaps",
+      "bytes": 467235,
+      "id": 0,
+      "brBytes": 250740,
+      "sha256": "230f46e3068770bf0e2c515e95473e46df6f0854eff3552e48e355e8ab148868"
+    },
+    {
+      "id": 1,
+      "name": "FoxitSansItalic.pfb",
+      "bytes": 16339,
+      "brBytes": 13721,
+      "sha256": "7751cbefeda351708dae8c4a88db043411bc39ab2ae2097685da845d4d16f307"
+    },
+    {
+      "id": 2,
+      "name": "FoxitSansBoldItalic.pfb",
+      "bytes": 16418,
+      "brBytes": 13410,
+      "sha256": "555ce45924338e2e4b32821910221ce85da691fd59a9723c4c971a7c5627fc8b"
+    },
+    {
+      "id": 3,
+      "name": "FoxitFixedBold.pfb",
+      "bytes": 18055,
+      "brBytes": 15173,
+      "sha256": "f1b7159702973f54fc86254ea38bcf3712b2a736eb3a0995751e9f4bb45ad603"
+    },
+    {
+      "id": 4,
+      "name": "FoxitFixedItalic.pfb",
+      "bytes": 18746,
+      "brBytes": 15675,
+      "sha256": "5007faf8320fa1fcc08b8894b356ad976f60b992ba29ee5272578bbdebaf3876"
+    },
+    {
+      "id": 5,
+      "name": "FoxitFixedBoldItalic.pfb",
+      "bytes": 19151,
+      "brBytes": 16086,
+      "sha256": "8a000945843bd31add06aee63bf9fd41b7578b4f3242a4b7cd46349ad9d24d4d"
+    },
+    {
+      "id": 6,
+      "name": "FoxitSerif.pfb",
+      "bytes": 19469,
+      "brBytes": 16766,
+      "sha256": "4f57d2b9d884af8f907bf22df6019b52d86cbf6214fdbd02b1ae05472a543f35"
+    },
+    {
+      "id": 7,
+      "name": "FoxitSerifBold.pfb",
+      "bytes": 19395,
+      "brBytes": 16503,
+      "sha256": "0bdf4b04e964139818d51eda03d566ba999fc3ba2421b1c6c51f9dc969022e80"
+    },
+    {
+      "id": 8,
+      "name": "FoxitSerifItalic.pfb",
+      "bytes": 21227,
+      "brBytes": 18208,
+      "sha256": "610ae0687198045c4db5d1a6650fd5e92536631706382eb8b72e38df578d0ae9"
+    },
+    {
+      "id": 9,
+      "name": "FoxitSerifBoldItalic.pfb",
+      "bytes": 20733,
+      "brBytes": 17692,
+      "sha256": "a406cac82583bf98175cb62c87ed5e95c45fbb34eece63a10b0a13e793cb2e10"
+    },
+    {
+      "id": 10,
+      "name": "FoxitDingbats.pfb",
+      "bytes": 29513,
+      "brBytes": 25079,
+      "sha256": "845c752392b6c914fb989c75a08b7792b88f542d2499042ef2889f8c814a16ed"
+    },
+    {
+      "id": 11,
+      "name": "FoxitSymbol.pfb",
+      "bytes": 16729,
+      "brBytes": 14157,
+      "sha256": "47967d055530e7357088a08403115425643ec2cdfd6201ba8af0fbd7116c1539"
+    }
+  ],
+  "js": {
+    "engine": {
+      "sha256": "952787856b0961ed7a52922ad3d0cada250531d32c7d780f02d02c773cfdbcdb",
+      "rawBytes": 3527,
+      "brBytes": 1211
+    },
+    "worker": {
+      "sha256": "388c97dc34a28fee0dec475df77bed359ac14c3b6c26162d43e47458d0aca3bc",
+      "rawBytes": 2632,
+      "brBytes": 1039
+    },
+    "lazyWorker": {
+      "sha256": "c82289ff5adc52b76ffaa6b6069d159178d38b7ec9704af30bddf48642a49e25",
+      "rawBytes": 3335,
+      "brBytes": 1289
+    }
+  },
+  "symbols": {
+    "matchedDefaultSections": false,
+    "groups": {
+      "hayro_syntax": {
+        "functions": 267,
+        "bodyBytes": 378369
+      },
+      "other": {
+        "functions": 821,
+        "bodyBytes": 685737
+      },
+      "read_fonts": {
+        "functions": 372,
+        "bodyBytes": 325722
+      },
+      "hayro_cmap": {
+        "functions": 79,
+        "bodyBytes": 123860
+      },
+      "hayro_font": {
+        "functions": 134,
+        "bodyBytes": 183947
+      },
+      "hayro_interpret": {
+        "functions": 358,
+        "bodyBytes": 507532
+      },
+      "skrifa": {
+        "functions": 142,
+        "bodyBytes": 241695
+      },
+      "vello_cpu": {
+        "functions": 289,
+        "bodyBytes": 286316
+      },
+      "brotli_decompressor": {
+        "functions": 19,
+        "bodyBytes": 40947
+      },
+      "hayro_jbig2": {
+        "functions": 91,
+        "bodyBytes": 258570
+      },
+      "hayro_ccitt": {
+        "functions": 9,
+        "bodyBytes": 4741
+      },
+      "hayro_jpeg2000": {
+        "functions": 130,
+        "bodyBytes": 210022
+      },
+      "zune_jpeg": {
+        "functions": 67,
+        "bodyBytes": 145259
+      }
+    },
+    "namedCodeBytes": 3397814,
+    "largest": [
+      {
+        "bytes": 41216,
+        "name": "_RNvMs_NtNtCs8GhuYfAwRd2_12hayro_syntax6object6streamNtB4_6Stream13decoded_image"
+      },
+      {
+        "bytes": 40691,
+        "name": "_RNvNtNtCs3E1JyrPkEm8_11hayro_jbig26decode6symbol6decode"
+      },
+      {
+        "bytes": 37993,
+        "name": "_RNvMNtNtNtNtNtCsjm5a2gCnOg0_6skrifa7outline4glyf4hint6engine8dispatchNtB4_6Engine3run"
+      },
+      {
+        "bytes": 35671,
+        "name": "_RNvNtNtCs8GhuYfAwRd2_12hayro_syntax6filter5ccitt6decode"
+      },
+      {
+        "bytes": 34439,
+        "name": "_RINvNtCs6UaUToNESjz_15hayro_interpret9interpret9interpretINtNtB4_7pattern20StencilPatternDeviceNtCs3H2o0uf9oS4_5hayro8RendererEEB1x_"
+      },
+      {
+        "bytes": 33141,
+        "name": "_RINvNtCs6UaUToNESjz_15hayro_interpret9interpret9interpretNtCs3H2o0uf9oS4_5hayro8RendererEBV_"
+      },
+      {
+        "bytes": 25812,
+        "name": "_RNvMs4_NtCsk3j2Hek4gYE_9vello_cpu4fineINtB5_4FineNtNtNtCsfrnUZEZtxbj_13fearless_simd9generated4wasm11WasmSimd128NtNtB5_4lowp8U8KernelE12indexed_fillB7_"
+      },
+      {
+        "bytes": 25116,
+        "name": "_RNvNtNtCsk29nsRzHbcC_14hayro_jpeg20003j2c6decode11decode_tile"
+      },
+      {
+        "bytes": 24086,
+        "name": "_RNvNtNtCs3E1JyrPkEm8_11hayro_jbig26decode7generic31decode_bitmap_arithmetic_coding"
+      },
+      {
+        "bytes": 22622,
+        "name": "_RNvNtNtCs3E1JyrPkEm8_11hayro_jbig26decode4text29decode_symbol_instance_bitmap"
+      },
+      {
+        "bytes": 20823,
+        "name": "_RNvNtNtNtCsk29nsRzHbcC_14hayro_jpeg20003j2c8bitplane9fast_path12cleanup_pass"
+      },
+      {
+        "bytes": 20559,
+        "name": "_RNvMs1_NtCs3H2o0uf9oS4_5hayro5imageNtB7_8Renderer14draw_pdf_image"
+      },
+      {
+        "bytes": 20317,
+        "name": "_RNvNtNtCsk29nsRzHbcC_14hayro_jpeg20003j2c4idwt9filter_2d"
+      },
+      {
+        "bytes": 19361,
+        "name": "_RNvNtNtCsk29nsRzHbcC_14hayro_jpeg20003j2c8bitplane12decode_inner"
+      },
+      {
+        "bytes": 19106,
+        "name": "_RINvMNtNtCs4LuWVo1MDBv_10read_fonts5model4fontNtB3_4Font3newINtNtCs5JHfeWeQK0x_5alloc4sync3ArcDINtNtCs4NIexwV1FGX_4core7convert5AsRefShENtNtB1A_6marker4SendNtB2c_4SyncEL_EECsjNiNJkohIYk_10hayro_font"
+      }
+    ]
+  },
+  "quality": [
+    {
+      "variant": "current",
+      "id": "p250",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "darkPixels": 33504,
+          "titleDark": 2910,
+          "rgbaSha256": "a715b2698189135ef51b0398ee300f52b23e2bd0bd4c263453c6dfed90506cf3"
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "darkPixels": 23676,
+          "titleDark": 1991,
+          "rgbaSha256": "5ea449247009c32b534f4018e9a1b2ad6363339b97e3f7d1132e1b914db2be68"
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "darkPixels": 26692,
+          "titleDark": 1829,
+          "rgbaSha256": "77f700a1d71cd4565f93d75bd50f8e8a0f36cce9b9626392b5aff50aa0ec5118"
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "darkPixels": 33492,
+          "titleDark": 2910,
+          "rgbaSha256": "3f39ecdc03a97b69fd4a16bddcf5ce0bf8c531968216c6ab9969d9e6148ecb70"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "current",
+      "id": "base14",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1125,
+          "darkPixels": 24125,
+          "titleDark": 1337,
+          "rgbaSha256": "d53ac4f7cab7a83cb574a52b4ec3663a7c6ffc05e4961b655ea9b59d2e563aaf"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "current",
+      "id": "jis",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1125,
+          "darkPixels": 9405,
+          "titleDark": 0,
+          "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "current",
+      "id": "identity",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1125,
+          "darkPixels": 9405,
+          "titleDark": 0,
+          "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "fonts",
+      "id": "p250",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "darkPixels": 33504,
+          "titleDark": 2910,
+          "rgbaSha256": "a715b2698189135ef51b0398ee300f52b23e2bd0bd4c263453c6dfed90506cf3"
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "darkPixels": 23676,
+          "titleDark": 1991,
+          "rgbaSha256": "5ea449247009c32b534f4018e9a1b2ad6363339b97e3f7d1132e1b914db2be68"
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "darkPixels": 26692,
+          "titleDark": 1829,
+          "rgbaSha256": "77f700a1d71cd4565f93d75bd50f8e8a0f36cce9b9626392b5aff50aa0ec5118"
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "darkPixels": 33492,
+          "titleDark": 2910,
+          "rgbaSha256": "3f39ecdc03a97b69fd4a16bddcf5ce0bf8c531968216c6ab9969d9e6148ecb70"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "fonts",
+      "id": "base14",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1125,
+          "darkPixels": 24125,
+          "titleDark": 1337,
+          "rgbaSha256": "d53ac4f7cab7a83cb574a52b4ec3663a7c6ffc05e4961b655ea9b59d2e563aaf"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "fonts",
+      "id": "jis",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1125,
+          "darkPixels": 20583,
+          "titleDark": 0,
+          "rgbaSha256": "12548f4f095a82c61671449d9652e848f9f44963897f136f437d510986a01064"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "fonts",
+      "id": "identity",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1125,
+          "darkPixels": 9405,
+          "titleDark": 0,
+          "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "cmaps",
+      "id": "p250",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "darkPixels": 21101,
+          "titleDark": 0,
+          "rgbaSha256": "a9ea6313fa6f4334eb5cd370713ce350bfb3fcbcc207ff93872b65178cc69d20"
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "darkPixels": 23047,
+          "titleDark": 1991,
+          "rgbaSha256": "58c39ae670691847903e86704fdeba40436c578eaa619266f09a70e1ffb6c2c5"
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "darkPixels": 18506,
+          "titleDark": 0,
+          "rgbaSha256": "6283a33b2b3ad76e763552001ba6b473201f25536298a75560d427a18a76c789"
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "darkPixels": 21101,
+          "titleDark": 0,
+          "rgbaSha256": "5211c3da5853a2b3b5bb491a4e179f754ae2fea376cbbb865c3419a1dadc1129"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "cmaps",
+      "id": "base14",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1125,
+          "darkPixels": 0,
+          "titleDark": 0,
+          "rgbaSha256": "d35e93d49d926f3ddd9c21e036d08e2b01da65d653935c614a3ff1577e44ecbc"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "cmaps",
+      "id": "jis",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1125,
+          "darkPixels": 9405,
+          "titleDark": 0,
+          "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "cmaps",
+      "id": "identity",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1125,
+          "darkPixels": 9405,
+          "titleDark": 0,
+          "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "neither",
+      "id": "p250",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "darkPixels": 21101,
+          "titleDark": 0,
+          "rgbaSha256": "a9ea6313fa6f4334eb5cd370713ce350bfb3fcbcc207ff93872b65178cc69d20"
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "darkPixels": 23047,
+          "titleDark": 1991,
+          "rgbaSha256": "58c39ae670691847903e86704fdeba40436c578eaa619266f09a70e1ffb6c2c5"
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "darkPixels": 18506,
+          "titleDark": 0,
+          "rgbaSha256": "6283a33b2b3ad76e763552001ba6b473201f25536298a75560d427a18a76c789"
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "darkPixels": 21101,
+          "titleDark": 0,
+          "rgbaSha256": "5211c3da5853a2b3b5bb491a4e179f754ae2fea376cbbb865c3419a1dadc1129"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "neither",
+      "id": "base14",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1125,
+          "darkPixels": 0,
+          "titleDark": 0,
+          "rgbaSha256": "d35e93d49d926f3ddd9c21e036d08e2b01da65d653935c614a3ff1577e44ecbc"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "neither",
+      "id": "jis",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1125,
+          "darkPixels": 0,
+          "titleDark": 0,
+          "rgbaSha256": "d35e93d49d926f3ddd9c21e036d08e2b01da65d653935c614a3ff1577e44ecbc"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "neither",
+      "id": "identity",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1125,
+          "darkPixels": 9405,
+          "titleDark": 0,
+          "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "lazy",
+      "id": "p250",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1165,
+          "darkPixels": 33504,
+          "titleDark": 2910,
+          "rgbaSha256": "a715b2698189135ef51b0398ee300f52b23e2bd0bd4c263453c6dfed90506cf3"
+        },
+        {
+          "page": 2,
+          "width": 900,
+          "height": 1165,
+          "darkPixels": 23676,
+          "titleDark": 1991,
+          "rgbaSha256": "5ea449247009c32b534f4018e9a1b2ad6363339b97e3f7d1132e1b914db2be68"
+        },
+        {
+          "page": 3,
+          "width": 900,
+          "height": 695,
+          "darkPixels": 26692,
+          "titleDark": 1829,
+          "rgbaSha256": "77f700a1d71cd4565f93d75bd50f8e8a0f36cce9b9626392b5aff50aa0ec5118"
+        },
+        {
+          "page": 4,
+          "width": 900,
+          "height": 1165,
+          "darkPixels": 33492,
+          "titleDark": 2910,
+          "rgbaSha256": "3f39ecdc03a97b69fd4a16bddcf5ce0bf8c531968216c6ab9969d9e6148ecb70"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "variant": "lazy",
+      "id": "base14",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1125,
+          "darkPixels": 24125,
+          "titleDark": 1337,
+          "rgbaSha256": "d53ac4f7cab7a83cb574a52b4ec3663a7c6ffc05e4961b655ea9b59d2e563aaf"
+        }
+      ],
+      "resources": [
+        {
+          "path": "/resources/1.bin",
+          "bytes": 13721
+        },
+        {
+          "path": "/resources/2.bin",
+          "bytes": 13410
+        },
+        {
+          "path": "/resources/3.bin",
+          "bytes": 15173
+        },
+        {
+          "path": "/resources/4.bin",
+          "bytes": 15675
+        },
+        {
+          "path": "/resources/5.bin",
+          "bytes": 16086
+        },
+        {
+          "path": "/resources/6.bin",
+          "bytes": 16766
+        },
+        {
+          "path": "/resources/7.bin",
+          "bytes": 16503
+        },
+        {
+          "path": "/resources/8.bin",
+          "bytes": 18208
+        },
+        {
+          "path": "/resources/9.bin",
+          "bytes": 17692
+        },
+        {
+          "path": "/resources/11.bin",
+          "bytes": 14157
+        },
+        {
+          "path": "/resources/10.bin",
+          "bytes": 25079
+        }
+      ]
+    },
+    {
+      "variant": "lazy",
+      "id": "jis",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1125,
+          "darkPixels": 9405,
+          "titleDark": 0,
+          "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d"
+        }
+      ],
+      "resources": [
+        {
+          "path": "/resources/0.bin",
+          "bytes": 250740
+        }
+      ]
+    },
+    {
+      "variant": "lazy",
+      "id": "identity",
+      "frames": [
+        {
+          "page": 1,
+          "width": 900,
+          "height": 1125,
+          "darkPixels": 9405,
+          "titleDark": 0,
+          "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d"
+        }
+      ],
+      "resources": []
+    }
+  ],
+  "missingAsset": {
+    "error": "Error: Hayro: Invalid renderer asset 0",
+    "width": 1
+  },
+  "samples": [
+    {
+      "round": 1,
+      "variant": "current",
+      "id": "p250",
+      "mainMs": 1313.5,
+      "marker": true,
+      "wasmBytes": 1427029,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "bytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "variant": "current",
+      "id": "p25",
+      "mainMs": 377.60000002384186,
+      "marker": true,
+      "wasmBytes": 0,
+      "transfers": [
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/fixtures/p25.pdf",
+          "bytes": 334458
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "variant": "lazy",
+      "id": "p250",
+      "mainMs": 934.3999999761581,
+      "marker": true,
+      "wasmBytes": 946661,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 946661
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "bytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "variant": "lazy",
+      "id": "p25",
+      "mainMs": 389.5999999642372,
+      "marker": true,
+      "wasmBytes": 0,
+      "transfers": [
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/fixtures/p25.pdf",
+          "bytes": 334458
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "variant": "lazy",
+      "id": "p250",
+      "mainMs": 931.5,
+      "marker": true,
+      "wasmBytes": 946661,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 946661
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "bytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "variant": "lazy",
+      "id": "p25",
+      "mainMs": 379.10000002384186,
+      "marker": true,
+      "wasmBytes": 0,
+      "transfers": [
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/fixtures/p25.pdf",
+          "bytes": 334458
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "variant": "current",
+      "id": "p250",
+      "mainMs": 1295.5,
+      "marker": true,
+      "wasmBytes": 1427029,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "bytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "variant": "current",
+      "id": "p25",
+      "mainMs": 376.60000002384186,
+      "marker": true,
+      "wasmBytes": 0,
+      "transfers": [
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/fixtures/p25.pdf",
+          "bytes": 334458
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "variant": "current",
+      "id": "p250",
+      "mainMs": 1330.7000000476837,
+      "marker": true,
+      "wasmBytes": 1427029,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "bytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "variant": "current",
+      "id": "p25",
+      "mainMs": 377.5999999642372,
+      "marker": true,
+      "wasmBytes": 0,
+      "transfers": [
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/fixtures/p25.pdf",
+          "bytes": 334458
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "variant": "lazy",
+      "id": "p250",
+      "mainMs": 908.1999999880791,
+      "marker": true,
+      "wasmBytes": 946661,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 946661
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "bytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "variant": "lazy",
+      "id": "p25",
+      "mainMs": 378.5999999642372,
+      "marker": true,
+      "wasmBytes": 0,
+      "transfers": [
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/fixtures/p25.pdf",
+          "bytes": 334458
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "variant": "lazy",
+      "id": "p250",
+      "mainMs": 919.5999999642372,
+      "marker": true,
+      "wasmBytes": 946661,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 946661
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "bytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "variant": "lazy",
+      "id": "p25",
+      "mainMs": 379.9000000357628,
+      "marker": true,
+      "wasmBytes": 0,
+      "transfers": [
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/fixtures/p25.pdf",
+          "bytes": 334458
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "variant": "current",
+      "id": "p250",
+      "mainMs": 1286.199999988079,
+      "marker": true,
+      "wasmBytes": 1427029,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "bytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "variant": "current",
+      "id": "p25",
+      "mainMs": 379.7999999523163,
+      "marker": true,
+      "wasmBytes": 0,
+      "transfers": [
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/fixtures/p25.pdf",
+          "bytes": 334458
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "variant": "current",
+      "id": "p250",
+      "mainMs": 1294.5999999642372,
+      "marker": true,
+      "wasmBytes": 1427029,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "bytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "variant": "current",
+      "id": "p25",
+      "mainMs": 380.10000002384186,
+      "marker": true,
+      "wasmBytes": 0,
+      "transfers": [
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/fixtures/p25.pdf",
+          "bytes": 334458
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "variant": "lazy",
+      "id": "p250",
+      "mainMs": 901.2000000476837,
+      "marker": true,
+      "wasmBytes": 946661,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 946661
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "bytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "variant": "lazy",
+      "id": "p25",
+      "mainMs": 379.60000002384186,
+      "marker": true,
+      "wasmBytes": 0,
+      "transfers": [
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/fixtures/p25.pdf",
+          "bytes": 334458
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "variant": "lazy",
+      "id": "p250",
+      "mainMs": 903.4000000357628,
+      "marker": true,
+      "wasmBytes": 946661,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 946661
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "bytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "variant": "lazy",
+      "id": "p25",
+      "mainMs": 380.7000000476837,
+      "marker": true,
+      "wasmBytes": 0,
+      "transfers": [
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/fixtures/p25.pdf",
+          "bytes": 334458
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "variant": "current",
+      "id": "p250",
+      "mainMs": 1303.9000000357628,
+      "marker": true,
+      "wasmBytes": 1427029,
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 1427029
+        },
+        {
+          "path": "/fixtures/p250.pdf",
+          "bytes": 433292
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "variant": "current",
+      "id": "p25",
+      "mainMs": 378.60000002384186,
+      "marker": true,
+      "wasmBytes": 0,
+      "transfers": [
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/fixtures/p25.pdf",
+          "bytes": 334458
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    }
+  ],
+  "namedCmapSamples": [
+    {
+      "round": 1,
+      "variant": "current",
+      "ms": 1283.199999988079,
+      "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d",
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 1427029
+        },
+        {
+          "path": "/fixtures/jis.pdf",
+          "bytes": 91439
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "variant": "lazy",
+      "ms": 1142.7000000476837,
+      "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d",
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 946661
+        },
+        {
+          "path": "/fixtures/jis.pdf",
+          "bytes": 91439
+        },
+        {
+          "path": "/resources/0.bin",
+          "bytes": 250740
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "variant": "lazy",
+      "ms": 1133,
+      "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d",
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 946661
+        },
+        {
+          "path": "/fixtures/jis.pdf",
+          "bytes": 91439
+        },
+        {
+          "path": "/resources/0.bin",
+          "bytes": 250740
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "variant": "current",
+      "ms": 1283.0999999642372,
+      "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d",
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 1427029
+        },
+        {
+          "path": "/fixtures/jis.pdf",
+          "bytes": 91439
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "variant": "current",
+      "ms": 1278,
+      "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d",
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 1427029
+        },
+        {
+          "path": "/fixtures/jis.pdf",
+          "bytes": 91439
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "variant": "lazy",
+      "ms": 1127,
+      "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d",
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 946661
+        },
+        {
+          "path": "/fixtures/jis.pdf",
+          "bytes": 91439
+        },
+        {
+          "path": "/resources/0.bin",
+          "bytes": 250740
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "variant": "lazy",
+      "ms": 1125.9000000357628,
+      "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d",
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 946661
+        },
+        {
+          "path": "/fixtures/jis.pdf",
+          "bytes": 91439
+        },
+        {
+          "path": "/resources/0.bin",
+          "bytes": 250740
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "variant": "current",
+      "ms": 1288.3999999761581,
+      "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d",
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 1427029
+        },
+        {
+          "path": "/fixtures/jis.pdf",
+          "bytes": 91439
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "variant": "current",
+      "ms": 1281.699999988079,
+      "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d",
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 1427029
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/fixtures/jis.pdf",
+          "bytes": 91439
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "variant": "lazy",
+      "ms": 1124.1000000238419,
+      "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d",
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 946661
+        },
+        {
+          "path": "/fixtures/jis.pdf",
+          "bytes": 91439
+        },
+        {
+          "path": "/resources/0.bin",
+          "bytes": 250740
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "variant": "lazy",
+      "ms": 1126.6000000238419,
+      "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d",
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1289
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 946661
+        },
+        {
+          "path": "/fixtures/jis.pdf",
+          "bytes": 91439
+        },
+        {
+          "path": "/resources/0.bin",
+          "bytes": 250740
+        },
+        {
+          "path": "/",
+          "bytes": 703
+        },
+        {
+          "path": "/host.js",
+          "bytes": 1691
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "variant": "current",
+      "ms": 1285.199999988079,
+      "rgbaSha256": "0c81d399e0bfc264125cd0c26b924e14c3c75a2e409160e53166cab955d4b22d",
+      "transfers": [
+        {
+          "path": "/wasm-engine.js",
+          "bytes": 1211
+        },
+        {
+          "path": "/wasm-worker.js",
+          "bytes": 1039
+        },
+        {
+          "path": "/pkg/folio_wasm.wasm",
+          "bytes": 1427029
+        },
+        {
+          "path": "/fixtures/jis.pdf",
+          "bytes": 91439
+        }
+      ]
+    }
+  ],
+  "hashes": {
+    "/index.html": "f005cb72c74d2a1335c47c9b0748660bd431580133a0049f9d58ab1fafb2f23e",
+    "/host.js": "bd421605d5727aad3c81521d3585979ddb33cd0a4b02301997c1f08a60f7430a",
+    "/wasm-engine.js": "952787856b0961ed7a52922ad3d0cada250531d32c7d780f02d02c773cfdbcdb",
+    "/wasm-worker.js": "388c97dc34a28fee0dec475df77bed359ac14c3b6c26162d43e47458d0aca3bc",
+    "lazy-worker": "c82289ff5adc52b76ffaa6b6069d159178d38b7ec9704af30bddf48642a49e25",
+    "/fixtures/p250.pdf": "cf8e2edebcaa41b1c0c67780120a96719fe7cb7cb04339fb9126d76b2270c4cc",
+    "/fixtures/p25.pdf": "1e42ad4b883eed894ec3dac031efe1d55a538be0bda77ec6b8141b8bd6729b2e",
+    "/fixtures/jis.pdf": "aa3a5facad9a9bbc8b59fe6f291a694c8795f9fef1d7799a069666b7bbee8405",
+    "/fixtures/identity.pdf": "37f1dabaa6e629ee8473a1e9d3ef90ff75f48ae4a632a71491cbf6e7fd7dcd02",
+    "/fixtures/base14.pdf": "2870bc1361b4b927d3dfca1f5418c45d38404b6d5a18f08fc7e2f0df70176a98"
+  },
+  "protocol": {
+    "rounds": 6,
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "deviceScaleFactor": 1,
+    "mbitPerResponse": 10,
+    "delayMs": 40,
+    "chunkBytes": 32768,
+    "brotliQuality": 11,
+    "bun": "1.4.5",
+    "chromium": "158.0.8127.18",
+    "playwright": "1.65.0",
+    "cpu": "AMD Ryzen 7 PRO 8840U w/ Radeon 780M Graphics  ",
+    "osRelease": "10.0.26300"
+  }
+}
