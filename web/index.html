@@ -2,7 +2,7 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Folio PDF preview benchmark</title>
+<title>Leafview PDF preview benchmark</title>
 <style>
   * { box-sizing: border-box }
   body { margin: 0; font: 16px system-ui, sans-serif; color: #294e64 }
@@ -22,7 +22,7 @@
   #error:not(:empty) { position: fixed; bottom: 0; background: #fff; color: #91261a; padding: 1em }
 </style>
 <section id="picker">
-  <h1>Folio PDF preview</h1>
+  <h1>Leafview PDF preview</h1>
   <p>Engine: <b id="mode"></b>. Switch to <a href="?engine=pdfjs">PDF.js</a> or <a href="?engine=wasm">Rust WASM</a>.</p>
   <button data-open="p25">Open 25 pages</button> <button data-open="p250">Open 250 pages</button>
 </section>

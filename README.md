@@ -1,6 +1,6 @@
-# Folio WASM
+# Leafview
 
-A Rust/WebAssembly PDF **page preview** for the browser. Hayro runs in a dedicated web worker. The viewer uses the same controls, preview sizes, thumbnail scheduling and cache policy for Folio and the PDF.js comparator.
+A Rust/WebAssembly PDF **page preview** for the browser. Hayro runs in a dedicated web worker. The viewer uses the same controls, preview sizes, thumbnail scheduling and cache policy for Leafview and the PDF.js comparator.
 
 ```js
 import { openDocument } from "./web/wasm-engine.js";
@@ -19,9 +19,9 @@ The prototype covers the canvas preview used in a packet-review UI. Text selecti
 
 The fixtures include text invoices, JPEG-based scan pages and rotated pages in 25- and 250-page packets. Each page encodes its document and page number as pixels. The scan asset is reused within a packet, so the corpus exercises navigation and cache behavior more than network throughput on large independent scans.
 
-**PDF.js wins first visits over a constrained network; Folio wins subsequent packet opens in the same tab.** Folio now compiles the renderer once per tab and shares the compiled code with new workers. Each PDF still has its own worker, private memory, and render cache. The release build uses WASM SIMD, whole-program optimization and a single code generation unit. Use a browser with WASM SIMD support.
+**PDF.js wins first visits over a constrained network; Leafview wins subsequent packet opens in the same tab.** Leafview now compiles the renderer once per tab and shares the compiled code with new workers. Each PDF still has its own worker, private memory, and render cache. The release build uses WASM SIMD, whole-program optimization and a single code generation unit. Use a browser with WASM SIMD support.
 
-| 250-page packet, desktop Chromium | PDF.js | Folio WASM |
+| 250-page packet, desktop Chromium | PDF.js | Leafview |
 |---|---:|---:|
 | Cold first preview, loopback | 213 ms | 115 ms |
 | Cold first preview, paced gzip delivery | 1.05 s | 1.65 s |
@@ -54,7 +54,7 @@ python bench/summarize.py artifacts/local-results.json
 bun bench/run.ts --paced
 ```
 
-`bun bench/run.ts --serve` prints a local address. Visit `/demo.html` at that address to open a local PDF in Folio.
+`bun bench/run.ts --serve` prints a local address. Visit `/demo.html` at that address to open a local PDF in Leafview.
 
 ## License
 
