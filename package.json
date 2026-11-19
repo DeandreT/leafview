@@ -1,0 +1,11 @@
+{
+  "name": "folio-wasm",
+  "private": true,
+  "type": "module",
+  "license": "GPL-3.0-only",
+  "packageManager": "bun@1.4.5",
+  "devDependencies": {
+    "pdfjs-dist": "5.4.624",
+    "playwright": "1.65.0"
+  }
+}

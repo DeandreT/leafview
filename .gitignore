@@ -1,0 +1,8 @@
+/target/
+/web/pkg/
+/node_modules/
+/fixtures/
+/artifacts/
+/.venv/
+**/__pycache__/
+*.log
